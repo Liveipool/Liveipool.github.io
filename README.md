@@ -4,7 +4,7 @@
 
 ##学习博客
 
-博客：[liveipool.cn](liveipool.cn)
+博客：[liveipool.com](liveipool.com)
 
 
 
