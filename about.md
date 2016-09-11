@@ -7,7 +7,8 @@ header-img: "img/green.jpg"
 
 
 <center>
-    <p><img src="http://7xlfkx.com1.z0.glb.clouddn.com/white2.jpg" align="center"></p>
+    <!-- <p><img src="http://7xlfkx.com1.z0.glb.clouddn.com/white2.jpg" align="center"></p> -->
+    <p><img src="img/liveipool.jpg" align="center"></p>
 </center>
 
 大学不能没有疯狂，但大学也不能只有疯狂。  
