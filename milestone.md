@@ -6,9 +6,9 @@ header-img: "img/zhihu.jpg"
 ---
 
 
-<center>
+<!-- <center>
     <p><img src="http://upload-images.jianshu.io/upload_images/3001083-30125fcb9b03aa58.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" align="center"></p>
-</center>
+</center> -->
 
 
 ### 第一篇：

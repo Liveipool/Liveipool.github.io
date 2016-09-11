@@ -5,10 +5,10 @@ description: "学在大三"
 header-img: "img/orange.jpg"
 ---
 
-<center>
+<!-- <center>
     <p><img src="http://upload-images.jianshu.io/upload_images/3001083-30125fcb9b03aa58.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" align="center"></p>
 </center>
-
+ -->
 <ul class="listing">
 {% for post in site.posts %}
   {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
