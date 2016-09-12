@@ -23,11 +23,11 @@ description: 近期学习路线
 3. 计算机组成原理     
 以及线代、离散、数据结构一大堆，后面挨个重新学一遍。    
 
-三、Java： 首先学号Java，再延伸到以下学科  
+三、Java： 首先学Java，再延伸到以下学科  
 1.安卓开发  
 2.分布式系统  
 
-四、Javascript： 这个面就有 点广了，几乎所有前端乃至一些后端技术都离不开Javascript.  
+四、Javascript： 这个面就有点广了，几乎所有前端乃至一些后端技术都离不开Javascript.  
 1. 《Javascript权威指南》  
 2. es6  
 
@@ -39,6 +39,7 @@ description: 近期学习路线
 前端 框架/平台  
 1.vue.js 做项目  
 2.angular、meteor: 也是等项目闲一点了，去研究一下它俩里面以前没有注意到的一些原理性的东西，搞懂他们的一些机制，如meteor的实时性、前端的minimongo怎么实现的等等。  
+3.react
 
 后端  
 1.node.js :拿来做项目，好好学，三本书依次看。  
