@@ -3,7 +3,7 @@ layout: post
 title: TCP、UDP及端口的一些概念总结。
 date: 2016-09-13
 categories: blog
-tags: [网络]
+tags: [网络基础]
 description: 网络基础
 ---
 
@@ -27,4 +27,5 @@ TCP执行的任务包括把应用层传来的数据分解为合适的数据段�
 
 因特网上数据的传输目标由主机和端口号组成，例如UDP这类基于数据报通信的每一数据报中均含有端口号信息。主机可由32位的IP地址标识（假设采用
 IPv4），端口则采用16位数字标识，故端口号的取值范围为0-65535。编号为0-1023的端口保留给系统服务使用，包括HTTP、FTP、Telnet、SMTP等常见服务。   
-**我们通常只自定义4位数的端口号是因为大多数TCP/IP实现给临时端口分配1024~5000之间的端口号。**
+**我们通常只自定义4位数的端口号是因为大多数TCP/IP实现给临时端口分配1024~5000之间的端口号。**  
+![](http://upload-images.jianshu.io/upload_images/3001083-dd243fd77c821f42.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
