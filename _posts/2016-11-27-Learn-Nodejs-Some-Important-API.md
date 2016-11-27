@@ -16,12 +16,12 @@ description: Nodejs学习摘要
 ![Node stream2.png](http://upload-images.jianshu.io/upload_images/3001083-83907ebeb0547be0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)    
 
 一些API：      
-  - process.argv：包含了所有Node程序运行时的参数值。  
-  - process.cwd：获取当前的工作目录。  
-  - process.env：可用来轻松访问shell环境下的变量。比如，一个最常见的环境变量就是NODE_ENV，该变量用来控制程序是运行在开发模式下还是产品模式下。  
-  - process.exit：用于退出程序，最好使用退出代码1, process.exit（1）。  
-  - process.on：事件分发。      
-  - 信号：进程和操作系统进行通信的其中一种方式就是通过信号。比如要想让进程终止，可以发送SIGKILL信号：process.on('SIGKILL', function(){ //信号已收到 }) ;     
+- process.argv：包含了所有Node程序运行时的参数值。    
+- process.cwd：获取当前的工作目录。    
+- process.env：可用来轻松访问shell环境下的变量。比如，一个最常见的环境变量就是NODE_ENV，该变量用来控制程序是运行在开发模式下还是产品模式下。    
+- process.exit：用于退出程序，最好使用退出代码1, process.exit（1）。    
+- process.on：事件分发。        
+- 信号：进程和操作系统进行通信的其中一种方式就是通过信号。比如要想让进程终止，可以发送SIGKILL信号：process.on('SIGKILL', function(){ //信号已收到 }) ;      
 
 对fs的一些深入理解：    
 ![Node fs1.png](http://upload-images.jianshu.io/upload_images/3001083-ecde37ac9e78dfee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)    
