@@ -16,12 +16,12 @@ description: Nodejs学习摘要
 ![Node stream2.png](http://upload-images.jianshu.io/upload_images/3001083-83907ebeb0547be0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)    
 
 一些API：      
- - process.argv：包含了所有Node程序运行时的参数值。  
- - process.cwd：获取当前的工作目录。  
- - process.env：可用来轻松访问shell环境下的变量。比如，一个最常见的环境变量就是NODE_ENV，该变量用来控制程序是运行在开发模式下还是产品模式下。  
- - process.exit：用于退出程序，最好使用退出代码1, process.exit（1）。  
- - process.on：事件分发。      
- - 信号：进程和操作系统进行通信的其中一种方式就是通过信号。比如要想让进程终止，可以发送SIGKILL信号：process.on('SIGKILL', function(){ //信号已收到 }) ;     
+  - process.argv：包含了所有Node程序运行时的参数值。  
+  - process.cwd：获取当前的工作目录。  
+  - process.env：可用来轻松访问shell环境下的变量。比如，一个最常见的环境变量就是NODE_ENV，该变量用来控制程序是运行在开发模式下还是产品模式下。  
+  - process.exit：用于退出程序，最好使用退出代码1, process.exit（1）。  
+  - process.on：事件分发。      
+  - 信号：进程和操作系统进行通信的其中一种方式就是通过信号。比如要想让进程终止，可以发送SIGKILL信号：process.on('SIGKILL', function(){ //信号已收到 }) ;     
 
 对fs的一些深入理解：    
 ![Node fs1.png](http://upload-images.jianshu.io/upload_images/3001083-ecde37ac9e78dfee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)    
@@ -31,7 +31,7 @@ description: Nodejs学习摘要
 ### TCP    
  - 大部分时候，连接如MySQL等的数据库以及与数据库进行通信使用的都是TCP套接字。Node HTTP服务器是构建于Node TCP服务器之上的。从编程的角度来说，也就是Node中的http.Server继承自net.Server（net是TCP模块）。   
  - 要是用Node来写一个TCP服务器，就完全没必要去考虑TCP复杂的内部实现了。只要考虑连接以及往套接字中写数据即可。   
- - TCP对字符以及字符编码是完全不之的，不同的编码会导致传输的字节数不同。所以TCP允许数据以ASC||字符（每个字符一个字节）或者Unicode（每个字符四个字节）进行传输。正是因为对消息格式没有严格的约束，使得TCP有很好的灵活性。  
+ - TCP对字符以及字符编码是完全不之的，不同的编码会导致传输的字节数不同。所以TCP允许数据以ASCⅡ字符（每个字符一个字节）或者Unicode（每个字符四个字节）进行传输。正是因为对消息格式没有严格的约束，使得TCP有很好的灵活性。  
  - 书上讲解了一个简单的基于TCP的聊天程序的写法。（创建了一个TCP服务器，可通过telnet在终端建立一个TCP连接以加入聊天室），代码如下：    
 ![Node tcp-chat.png](http://upload-images.jianshu.io/upload_images/3001083-5e7cb87dc88ef6b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)    
 
