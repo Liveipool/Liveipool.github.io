@@ -11,6 +11,7 @@ description: Express学习
 # Express学习之三大核心--路由、中间件、模板引擎
 Express：高度包容、快速而极简的 Node.js Web 框架。   
 鉴于Connect（一个基于HTTP服务器的工具集）基于HTTP模块提供了开发Web应用常用的基础功能，Express基于Connect为构建整个网站以及Web应用提供了更为方便的API。（从V4.x起，Express不再依赖于Connect）    
+
 ##### Express是基于nodejs的web开发框架。优点是易上手、高性能、扩展性强。   
  - 易上手：nodejs最初就是为了开发高性能web服务器而被设计出来的，然而相对底层的API会让不少新手望而却步。Express对web开发相关的模块进行了适度的封装，屏蔽了大量复杂繁琐的技术细节，让开发者只需要专注于业务逻辑的开发，极大的降低了入门和学习的成本。   
  - 高性能：Express仅在web应用相关的nodejs模块上进行了适度的封装和扩展，较大程度避免了过度封装导致的性能损耗。    
@@ -25,11 +26,13 @@ Express：高度包容、快速而极简的 Node.js Web 框架。
 路由用于确定应用程序如何响应对特定端点的客户机请求，包含一个 URI（或路径）和一个特定的 HTTP 请求方法（GET、POST 等）。     
 每个路由可以具有一个或多个处理程序函数，这些函数在路由匹配时执行。     
 路由定义采用此结构：app.METHOD(PATH, HANDLER)       
-#####其中：    
+
+##### 其中：    
  - app 是 express 的实例。     
  - METHOD 是 HTTP 请求方法。       
  - PATH 是服务器上的路径。        
- - HANDLER 是在路由匹配时执行的函数。         
+ - HANDLER 是在路由匹配时执行的函数。  
+
 ##### 如：    
 > var express = require('express');     
 >	var app = express();      
@@ -73,6 +76,7 @@ Express：高度包容、快速而极简的 Node.js Web 框架。
 "一切皆中间件“            
 Express 是一个路由和中间件 Web 框架，其自身只具有最低程度的功能：Express 应用程序基本上是一系列中间件函数调用。     
 中间件函数能够访问请求对象 (req)、响应对象 (res) 以及应用程序的请求/响应循环中的下一个中间件函数。下一个中间件函数通常由名为 next 的变量来表示。     
+
 ##### 中间件函数可以执行以下任务：     
  - 执行任何代码。       
  - 对请求和响应对象进行更改。         
