@@ -96,7 +96,9 @@ gulp.task('jade', ['inject'], function() {
 其中，style.scss是用sass来写一些全局的较为常用的样式代码，方便以后的编程：             
 ![stylescss.png](http://upload-images.jianshu.io/upload_images/3001083-65992cbee3ce15ee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-layout.jade是专门用来装html文件中的所有css、js依赖的文件，这里使用gulp-inject这个插件，创建文件后运行gulp命令后就可以自动注入依赖而不用我们手动注入。        
+layout.jade是专门用来装html文件中的所有css、js依赖的文件，这里使用gulp-inject这个插件，创建文件后运行gulp命令后就可以自动注入依赖而不用我们手动注入   
+
+
 ```
 doctype html
 html
@@ -113,7 +115,8 @@ html
 	script(src="/scripts/index.js")
 	//- js文件会自动注入到inject：js和endinject之间
 	//- endinject
-```
+```    
+
 
 ```
 gulp.task('inject', ['sass', 'css', 'js'], function() {
@@ -160,7 +163,7 @@ gulp.task('clean', function() {
 
 ### 完整的gulpfile.js文件代码和命令行运行截图        
 最后，来看看搭建完成后的gulpfile.js文件和命令行运行的截图：   
-     
+
 ```
 //gulpfile.js
 var gulp = require('gulp');
