@@ -12,18 +12,21 @@ description: 前端自动构建工具--gulp学习笔记
 搭建完这个小框架的一个星期后，一直想写一篇blog来记录一下，可几次想提笔都觉得没啥好写的，但心里始终惦记着这事也不舒服，于是在这里来小小总结一下吧，能写多少是多少，毕竟都是自己的亲身体验。          
 
 ### 一、安装gulp到项目中          
-首先，自然是安装gulp，gulp需要先进行一次全局安装，再在项目中添加进gulp。        
-```
-$ npm install --global gulp
-$ npm install --save-dev gulp
-```
-接下来创建最为重要的gulpfile.js文件，gulp所有的配置信息都写在这里面：        
-```
-var gulp = require('gulp');
+首先，自然是安装gulp，gulp需要先进行一次全局安装，再在项目中添加进gulp。   
 
-gulp.task('default', function() {
-  // do something
-});
+```
+$ npm install --global gulp     
+$ npm install --save-dev gulp     
+```
+
+接下来创建最为重要的gulpfile.js文件，gulp所有的配置信息都写在这里面：   
+
+```
+var gulp = require('gulp');    
+
+gulp.task('default', function() {   
+  // do something     
+});   
 ```
 至此，在命令行输入gulp命令就可以运行项目了，但现在自然是什么输出都没有。        
 
@@ -50,7 +53,9 @@ gulp.task('webserver', function() {
 在这个项目中，内容部分使用jade这个模板引擎，样式部分的代码写在.css或.scss中，因此项目中需要能够处理jade和sass，而要满足这个要求，就要通过安装插件来实现了。而gulp的一个特点就是插件的管理很好，它通过严格的插件指南来确保插件如用户期望的那样简洁高质的工作。通过几条命令就能完成插件的安装了。        
 
 ### 四、将各文件预处理或打包到tmp文件夹中          
-接下来就是将各文件打包到tmp文件夹中了，这一步较为浅显，看了代码应该就能理解：        
+接下来就是将各文件打包到tmp文件夹中了，这一步较为浅显，看了代码应该就能理解：  
+
+
 ```
 gulp.task('sass', function() {
 	gulp.src('style.scss')
@@ -58,32 +63,27 @@ gulp.task('sass', function() {
 		.pipe(gulp.dest('styles'))
 		.pipe(connect.reload());  //用来实现更改自动刷新
 });
-
 gulp.task('css', ['sass'], function() {   //['sass']指sass这个task完成之后再执行css这个task。
 	gulp.src('styles/*.css')
 		.pipe(gulp.dest('tmp/styles'))
 		.pipe(connect.reload());
 });
-
 gulp.task('js', function() {
 	gulp.src('scripts/*.js')
 		.pipe(gulp.dest('tmp/scripts'))
 		.pipe(connect.reload());
 });
-
 //static这一部分应该有更简单的写法，但要求不多所以暂时这么写也没问题
 gulp.task('static', function() { 
 	gulp.src(['static/pictures/*.jpg', 'static/pictures/*.JPG', 'static/pictures/*.png', 'static/pictures/*.PNG', 'static/pictures/*.gif', 'static/pictures/*.jpeg'])
 		.pipe(gulp.dest('tmp/static/pictures'));
 });
-
 gulp.task('index', ['inject'], function() {
 	gulp.src('*.jade')
 		.pipe(jade())
 		.pipe(gulp.dest('tmp'))
 		.pipe(connect.reload());
 });
-
 gulp.task('jade', ['inject'], function() {
 	gulp.src('layouts/*.jade')
 		.pipe(jade())
@@ -107,11 +107,8 @@ html
 	link(rel="stylesheet", href="/styles/index.css")
 	//- css文件会自动注入到inject：css和endinject之间
 	//- endinject 
-
 	body
 		block content
-
-	
 	//- inject:js
 	script(src="/scripts/index.js")
 	//- js文件会自动注入到inject：js和endinject之间
@@ -133,7 +130,8 @@ index.jade：此文件在运行gulp命令后会被编译为index.html文件放�
 ![indexjade.png](http://upload-images.jianshu.io/upload_images/3001083-83e3aec872445238.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)   
 
 ### 六、实现更改代码自动刷新页面  
-这个功能是非常实用的，因为这样就不用更改代码后再手动去刷新页面查看更改。而要实现这个功能也不需要安装新的插件，gulp-connect中有一个livereload属性，我们将它设为true。然后通过一个“watch”  task，在检测到如js文件有改动时就执行“js”这个task，在task中，执行connect.reload（），就实现了自动刷新页面。        
+这个功能是非常实用的，因为这样就不用更改代码后再手动去刷新页面查看更改。而要实现这个功能也不需要安装新的插件，gulp-connect中有一个livereload属性，我们将它设为true。然后通过一个“watch”  task，在检测到如js文件有改动时就执行“js”这个task，在task中，执行connect.reload（），就实现了自动刷新页面。    
+
 ```
 gulp.task('webserver', function() {
 	connect.server({
@@ -141,20 +139,19 @@ gulp.task('webserver', function() {
 		livereload: true
 	});
 });
-
 gulp.task('js', function() {
 	gulp.src('scripts/*.js')
 		.pipe(gulp.dest('tmp/scripts'))
 		.pipe(connect.reload());
 });
-
 gulp.task('watch', function() {
 	gulp.watch('scripts/*.js', ['js']);
 });
 ```
 
 ### 七、通过gulp clean命令删除生成的tmp包           
-这个功能也较为简单，主要是通过一个del插件，安装之后再进行一点设置就OK了：        
+这个功能也较为简单，主要是通过一个del插件，安装之后再进行一点设置就OK了： 
+
 ```
 gulp.task('clean', function() {
 	return del(['tmp']);
@@ -162,7 +159,8 @@ gulp.task('clean', function() {
 ```
 
 ### 完整的gulpfile.js文件代码和命令行运行截图        
-最后，来看看搭建完成后的gulpfile.js文件和命令行运行的截图：        
+最后，来看看搭建完成后的gulpfile.js文件和命令行运行的截图：   
+     
 ```
 //gulpfile.js
 var gulp = require('gulp');
