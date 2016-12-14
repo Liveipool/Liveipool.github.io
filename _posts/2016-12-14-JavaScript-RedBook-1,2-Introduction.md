@@ -64,6 +64,7 @@ JavaScript是一种专为网页交互而设计的脚本语言，由下列三个�
 6. type：可选。表示编写代码使用的脚本语言的内容类型（也称为MIME类型）。虽然text/javascript和text/   ecmascript都已经不被推荐使用，但人们一直依赖使用的都还是text/javascript。实际上，**服务器在传送JavaScript文件时使用的MIME类型通常是application/x-javascript。**考虑到约定俗成和最大限度的浏览器兼容性，目前type属性的值依旧还是text/javascript。不过，这个属性不是必需的，不指定的话，默认也是text/javascript。  
 
 *一般来说，只用第5、6个属性。*     
+
 #### 2.1.1 标签的位置   
 在文档的< head >元素中包含所有的JavaScript文件，意味着必须等到全部JavaScript代码都被下载、解析和执行完成以后，才能开始呈现页面的内容（浏览器在遇到< body >标签时才开始呈现内容）。对于哪些需要很多JavaScript代码的页面来说，这无疑会导致浏览器在呈现页面时出现明显的延迟，而延迟期间的浏览器窗口中将是一片空白。为了避免这个问题，现代Web应用程序一般都把全部JavaScript引用放在< body >元素中页面内容的后面。    
 
