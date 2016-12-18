@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HWFC项目理解（二）-- webpack-dev-middleware and webpack-hot-middleware   
+title: HWFC项目包理解（二）-- webpack-dev-middleware and webpack-hot-middleware   
 date: 2016-12-18
 categories: blog
 tags: [前端]
@@ -141,7 +141,6 @@ Object.keys(proxyTable).forEach(function (context) {
 app.use(require('connect-history-api-fallback')())
 
 // serve webpack bundle output
-//重点来了，我们有了伺服器express，有了编译核心webpack，接着我们需要wrapper 来打包webpack 将其合进express 的middleware stack 中。
 app.use(devMiddleware)
 
 // enable hot-reload and state-preserving

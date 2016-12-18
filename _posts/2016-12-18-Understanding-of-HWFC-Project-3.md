@@ -21,7 +21,7 @@ description: HWFC项目包理解
 
 ## webpack.base.conf.js        
 
-```
+``` javascript
 //webpack.base.conf.js
 var path = require('path')
 var config = require('../config')
@@ -128,7 +128,7 @@ module.exports = {
 ```    
 
 
-**其中有一些要素值得单独拿出来一说:   **     
+**其中有一些要素值得单独拿出来一说:**:     
 
 ### entry, output       
 ![entry.png](http://upload-images.jianshu.io/upload_images/3001083-065a081a6fbe5ea3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
@@ -208,7 +208,6 @@ module.exports = merge(baseWebpackConfig, {
   //eval-source-map就是把 eval 的 sourceURL 换成了完整 souremap 信息的 DataUrl
   devtool: '#eval-source-map',
   plugins: [
-
     //The DefinePlugin allows you to create global constants which can be configured at compile time. 
     //This can be very useful for allowing different behaviour between development builds and release builds. 
     //For example, you might use a global constant to determine whether logging takes place; 
@@ -401,11 +400,12 @@ module.exports = webpackConfig
 
 
 ![dist目录.png](http://upload-images.jianshu.io/upload_images/3001083-e573fe703cd527e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)          
+
 ### 从dist文件夹的结构来看:         
  - index.html是webpack.prod.conf.js中的 HtmlWebpackPlugin部分生成的.     
  - index.html中的所有css的依赖是通过extract-text-webpack-plugin插件注入的,所有的的js依赖是通过html-webpack-plugin注入的.     
- - app.~~~.js是webpack.prod.conf.js中的output里配置产生的:filename: utils.assetsPath('js/[name].[chunkhash].js').     
- - app.~~~.css是webpack.prod.conf.js中的new ExtractTextPlugin(utils.assetsPath('css/[name].[contenthash].css'))生成的.     
+ - app.×××.js是webpack.prod.conf.js中的output里配置产生的:filename: utils.assetsPath('js/[name].[chunkhash].js').     
+ - app.×××.css是webpack.prod.conf.js中的new ExtractTextPlugin(utils.assetsPath('css/[name].[contenthash].css'))生成的.     
  - manifest和vendor是通过webpack.prod.conf.js中的CommonsChunkPlugin产生的.     
  - 所有的map文件是sourceMap的产物.     
      
