@@ -7,7 +7,7 @@ tags: [前端]
 description: HWFC项目包理解
 ---
 
-# HWFC项目理解（二）-- webpack-dev-middleware and webpack-hot-middleware  
+# 两个中间件
 
 ## 各文链接     
  - [HWFC项目包理解（一）-- 从目录结构和package.json开始 ](http://liveipool.com/blog/2016/12/18/Understanding-of-HWFC-Project-1/)      

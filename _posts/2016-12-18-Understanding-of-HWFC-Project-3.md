@@ -7,16 +7,17 @@ tags: [前端]
 description: HWFC项目包理解
 ---
 
-# HWFC项目包理解（三）-- 三个 webpack.conf.js 文件      
+# 三个 webpack.conf.js 文件      
+
+> Webpack在执行的时候，除了在命令行传入参数，还可以通过指定的配置文件来执行。默认情况下，会搜索当前目录的webpack.config.js文件，这个文件是一个 node.js 模块，返回一个 json 格式的配置信息对象，或者通过 --config 选项来指定配置文件。     
+> 这个文件非常重要，在HWFC项目包中，有一个基础的webpack.base.conf.js文件，还有两个对应不同环境的文件,一个是"development"的webpack.dev.conf.js,一个是"production"的webpack.prod.conf.js,这两个文件通过webpack-merge插件合并webpack.base.conf.js,成为两种环境下利用webpack打包时的完整配置文件,这些文件里包含了整个打包流程的各种配置信息。     
+> 下面,我们还是结合代码和注释来理解.     
 
 ## 各文链接     
  - [HWFC项目包理解（一）-- 从目录结构和package.json开始 ](http://liveipool.com/blog/2016/12/18/Understanding-of-HWFC-Project-1/)      
  - [HWFC项目理解（二）-- webpack-dev-middleware and webpack-hot-middleware](http://liveipool.com/blog/2016/12/18/Understanding-of-HWFC-Project-2/)        
  - [HWFC项目包理解（三）-- 三个 webpack.conf.js 文件](http://liveipool.com/blog/2016/12/18/Understanding-of-HWFC-Project-3/)   
  - [HWFC项目包理解（四）-- Utils 和 Config/](http://liveipool.com/blog/2016/12/18/Understanding-of-HWFC-Project-4/)               
-> Webpack在执行的时候，除了在命令行传入参数，还可以通过指定的配置文件来执行。默认情况下，会搜索当前目录的webpack.config.js文件，这个文件是一个 node.js 模块，返回一个 json 格式的配置信息对象，或者通过 --config 选项来指定配置文件。     
-> 这个文件非常重要，在HWFC项目包中，有一个基础的webpack.base.conf.js文件，还有两个对应不同环境的文件,一个是"development"的webpack.dev.conf.js,一个是"production"的webpack.prod.conf.js,这两个文件通过webpack-merge插件合并webpack.base.conf.js,成为两种环境下利用webpack打包时的完整配置文件,这些文件里包含了整个打包流程的各种配置信息。     
-> 下面,我们还是结合代码和注释来理解.       
 
 ## webpack.base.conf.js        
 
