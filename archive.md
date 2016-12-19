@@ -2,7 +2,7 @@
 layout: page
 title: "Archive"
 description: "学在大三"
-header-img: "img/liverpool.jpg"
+header-img: "img/liver.jpg"
 ---
 
 <!-- <center>
