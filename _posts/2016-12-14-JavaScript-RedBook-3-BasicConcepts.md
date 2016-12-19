@@ -7,7 +7,7 @@ tags: [JavaScript]
 description: JavaScript学习
 ---
 
- # 基本概念      
+# 基本概念      
 
 ## 3.1 语法     
 
