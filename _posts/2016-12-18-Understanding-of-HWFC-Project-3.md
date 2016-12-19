@@ -208,6 +208,7 @@ module.exports = merge(baseWebpackConfig, {
   //eval-source-map就是把 eval 的 sourceURL 换成了完整 souremap 信息的 DataUrl
   devtool: '#eval-source-map',
   plugins: [
+
     //The DefinePlugin allows you to create global constants which can be configured at compile time. 
     //This can be very useful for allowing different behaviour between development builds and release builds. 
     //For example, you might use a global constant to determine whether logging takes place; 
@@ -244,7 +245,7 @@ module.exports = merge(baseWebpackConfig, {
   ]
 })
 
-```
+```    
 
 ### webpack-merge        
 ![webpack-merge1.png](http://upload-images.jianshu.io/upload_images/3001083-99d1fa2278c4572d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
