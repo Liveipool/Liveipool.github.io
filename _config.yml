@@ -1,6 +1,6 @@
 # Site settings
 title: Liveipool
-header-img: "img/green.jpg"
+header-img: "img/kop.jpg"
 tagline: "lw"  
 description: "李为|liveipool"  
 baseurl: ""
@@ -44,7 +44,7 @@ defaults:
     values:
       layout: "post"
       author: "liveipool"
-      header-img: "img/1402321251640-15551.jpg" # We don't want posts without a header image, that whould mean white on white
+      header-img: "img/anfield3.jpg" # We don't want posts without a header image, that whould mean white on white
 
 # Comments 
 comments :

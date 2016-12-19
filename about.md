@@ -2,7 +2,7 @@
 layout: page
 title: "About"
 description: "低姿态，高表现，保持信仰"
-header-img: "img/1402321251640-15551.jpg"
+header-img: "img/gerrard4.jpg"
 ---
 
 
