@@ -126,4 +126,11 @@ x + ""     //等价于String(x).
 **神奇是有毒的，但这样的毒未尝不是一件好事，它让你迫切地想去解毒，想去解决这个问题**。  
 **我感觉学习就是一个不断踩坑再不断填坑的过程，有些坑可能第一次偷懒迈过去了，但谁又说得准以后就不会碰到相同的坑了呢。**  
 **所以，打好基础才是硬道理，不断学习，让“神奇”的东西越来越少。**   
-**甚至，说不定有一天，能自己去创造一些“神奇”。**    
+**甚至，说不定有一天，能自己去创造一些“神奇”。**     
+
+### 相关文章链接    
+ - [Javascript深入学习1——词法结构、类型、值、变量](http://liveipool.com/blog/2016/09/12/learn-javascript-1/)       
+ - [JavaScript红皮书学习(1,2)--JavaScript简介](http://liveipool.com/blog/2016/12/14/JavaScript-RedBook-1,2-Introduction/)  
+ - [JavaScript红皮书学习(3)--基本概念](http://liveipool.com/blog/2016/12/14/JavaScript-RedBook-3-BasicConcepts/)   
+ - [JavaScript红皮书学习(4)--变量、作用域和内存问题](http://liveipool.com/blog/2016/12/19/JavaScript-RedBook-4-Variable-Scope-and-Memory/)   
+

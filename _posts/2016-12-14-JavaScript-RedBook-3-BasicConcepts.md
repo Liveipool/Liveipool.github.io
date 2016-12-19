@@ -1,13 +1,13 @@
 ---
 layout: post
-title: JavaScript红皮书学习--基本概念
+title: JavaScript红皮书学习(3)--基本概念
 date: 2016-12-14
 categories: blog
 tags: [JavaScript]
 description: JavaScript学习
 ---
 
-# JavaScript红皮书学习--基本概念      
+ # 基本概念      
 
 ## 3.1 语法     
 
@@ -18,10 +18,27 @@ ECMAScript中的一切（变量、函数名和操作符都区分大小写），�
  - 标识符是指变量、函数、属性的名字，或者函数的参数。标识符可以是按照下列格式规则组合起来的一个或多个字符。     
  - 第一个字符必须是一个字母、下划线或一个美元符号($)。     
  - 其它字符可以是字母、下划线、美元符号或者数字。     
-按照惯例，ECMAScript标识符采用驼峰大小写格式，这不是一种规定，但为了与 ECMAScript内置的函数和对象命名格式保持一致，可以将其当作是一种最佳时间。        
+按照惯例，ECMAScript标识符采用驼峰大小写格式，这不是一种规定，但为了与 ECMAScript内置的函数和对象命名格式保持一致，可以将其当作是一种最佳实践。        
 
 ### 3.1.4 严格模式        
 ![3.1.4.png](http://upload-images.jianshu.io/upload_images/3001083-7f0ee6d840d29c93.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
+
+##### 严格模式主要有以下限制      
+ - 变量必须声明后再使用     
+ - 函数的参数不能有同名属性，否则报错     
+ - 不能使用with语句     
+ - 不能对只读属性赋值，否则报错     
+ - 不能使用前缀0表示八进制数，否则报错     
+ - 不能删除不可删除的属性，否则报错     
+ - 不能删除变量delete prop，会报错，只能删除属性delete global[prop]     
+ - eval不会在它的外层作用域引入变量     
+ - eval和arguments不能被重新赋值     
+ - arguments不会自动反映函数参数的变化     
+ - 不能使用arguments.callee     
+ - 不能使用arguments.caller     
+ - 禁止this指向全局对象          
+ - 不能使用fn.caller和fn.arguments获取函数调用的堆栈     
+ - 增加了保留字（比如protected、static和interface）     
 
 ## 3.3 变量       
  - ECMAScript的变量是**松散类型**的，所谓松散类型就是可以用来保存任何类型的数据。换句话说，每个变量仅仅是一个用于保存值的占位符而已。       
@@ -95,7 +112,7 @@ s = +s; //变为数值1.1
 
 1. 按位非（NOT， ～）：本质：操作数的负值减一。     
 2. 按位与（AND，&）     
-3. 按位或（OR， | ）     
+3. 按位或（OR，|）     
 4. 按位异或（XOR， ^）     
 5. 左移（ << ）     
 6. 有符号的右移 （>>）：用符号位来填充     
@@ -104,7 +121,7 @@ s = +s; //变为数值1.1
 ![3.5.23.png](http://upload-images.jianshu.io/upload_images/3001083-d1f0af47241a3a7d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
 
 ```
-var num1 = 25 //二进制000000000000000000000000000011001
+var num1 = 25    //二进制000000000000000000000000000011001
 var num2 = ~num1 //二进制111111111111111111111111111100110
 alert(num2) //-26
 
@@ -117,9 +134,9 @@ num3 | num4  //7
 num3 ^ num4  //6
 
 2 << 5       //64,即从0000 0000 0000 0000 0000 0000 0000 0010 变为了 0000 0000 0000 0000 0000 0000 0010 0000
-2 << 29      //1073741824, 0100 0000 0000 0000 0000 0000 0000 0000
+2 << 29      //1073741824,  0100 0000 0000 0000 0000 0000 0000 0000
 2 << 30      //-2147483648, 1000 0000 0000 0000 0000 0000 0000 0000
-2 << 31      //0, 0000 0000 0000 0000 0000 0000 0000 0000  
+2 << 31      //0,           0000 0000 0000 0000 0000 0000 0000 0000  
 64 >> 5      //2
 ```
 
@@ -189,4 +206,11 @@ num3 ^ num4  //6
 
 ## 3.8 小结       
 ![3.8.png](http://upload-images.jianshu.io/upload_images/3001083-50161b2c8a4300ae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
+
+
+### 相关文章链接    
+ - [Javascript深入学习1——词法结构、类型、值、变量](http://liveipool.com/blog/2016/09/12/learn-javascript-1/)       
+ - [JavaScript红皮书学习(1,2)--JavaScript简介](http://liveipool.com/blog/2016/12/14/JavaScript-RedBook-1,2-Introduction/)  
+ - [JavaScript红皮书学习(3)--基本概念](http://liveipool.com/blog/2016/12/14/JavaScript-RedBook-3-BasicConcepts/)   
+ - [JavaScript红皮书学习(4)--变量、作用域和内存问题](http://liveipool.com/blog/2016/12/19/JavaScript-RedBook-4-Variable-Scope-and-Memory/)   
 

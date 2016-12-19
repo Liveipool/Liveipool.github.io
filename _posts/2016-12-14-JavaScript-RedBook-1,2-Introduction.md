@@ -1,13 +1,13 @@
 ---
 layout: post
-title: JavaScript红皮书学习--JavaScript简介
+title: JavaScript红皮书学习(1,2)--JavaScript简介
 date: 2016-12-14
 categories: blog
 tags: [JavaScript]
 description: JavaScript学习
 ---
 
-# JavaScript红皮书学习--JavaScript简介    
+# JavaScript简介    
 
 ## 1. JavaScript简介  
 JavaScript诞生于1995年，当时，它的主要目的是处理以前由服务器语言（如perl）负责的一些输入验证操作，因为在JavaScript问世之前，必须把表单数据发送到服务器端才能确定用户是否正确填写了表单。  
@@ -74,6 +74,12 @@ HTML5标准模式：
 
     <!-- HTML 5 -->     
     <!DOCTYPE html>     
+
+### 相关文章链接    
+ - [Javascript深入学习1——词法结构、类型、值、变量](http://liveipool.com/blog/2016/09/12/learn-javascript-1/)       
+ - [JavaScript红皮书学习(1,2)--JavaScript简介](http://liveipool.com/blog/2016/12/14/JavaScript-RedBook-1,2-Introduction/)  
+ - [JavaScript红皮书学习(3)--基本概念](http://liveipool.com/blog/2016/12/14/JavaScript-RedBook-3-BasicConcepts/)   
+ - [JavaScript红皮书学习(4)--变量、作用域和内存问题](http://liveipool.com/blog/2016/12/19/JavaScript-RedBook-4-Variable-Scope-and-Memory/)   
 
 
 
