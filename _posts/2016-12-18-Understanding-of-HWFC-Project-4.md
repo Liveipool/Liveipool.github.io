@@ -32,9 +32,9 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin')
 //这个路径再加上各webpack.conf.js文件中的output下设置的path根路径如:HWFC/dist即为最终文件的完整路径.
 //以后打包放到某个服务器上时要改动也只需要改动path属性,不用改动里面的各文件相对于根目录的路径.
 exports.assetsPath = function (_path) {
-  var assetsSubDirectory = process.env.NODE_ENV === 'production'
-    //config.build.assetsSubDirectory 和 config.dev.assetsSubDirectory的值设得相同,都是'static'
+  var assetsSubDirectory = process.env.NODE_ENV === 'production' 
     ? config.build.assetsSubDirectory : config.dev.assetsSubDirectory
+    //config.build.assetsSubDirectory 和 config.dev.assetsSubDirectory的值相同,为'static'
 
   //总是以posix兼容的方式交互
   //posix是可移植作業系統接口（英语：Portable Operating System Interface of UNIX，縮寫為POSIX）
