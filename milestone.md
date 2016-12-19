@@ -11,7 +11,7 @@ header-img: "img/ge.png"
 </center> -->
 
 ### HWFC项目包理解    
-[HWFC项目包理解（一）-- 从目录结构和package.json开始 ](http://liveipool.com/blog/2016/12/18/Understanding-of-HWFC-Project-1/)
+[《HWFC项目包理解》：http://liveipool.com/blog/2016/12/18/Understanding-of-HWFC-Project-1/](http://liveipool.com/blog/2016/12/18/Understanding-of-HWFC-Project-1/)
 
 ### 近期学习路线  
 [《近期学习路线》：http://liveipool.com/blog/2016/09/12/studying-plan/](http://liveipool.com/blog/2016/09/12/studying-plan/)  
