@@ -63,7 +63,7 @@ var num2 = n1;
 ![4.24.png](http://upload-images.jianshu.io/upload_images/3001083-b7819bf53a82428c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
 
 ### 4.2.1 延长作用域链       
-虽然执行环境的类型总共只有两种——全局和局部（函数），但还是有其他办法来延长作用域链。这么说是因为有些语句可以用在作用域链的**     前端临时增加一个变量对象**，该变量对象会在代码执行后被移除，这两种语句是：       
+虽然执行环境的类型总共只有两种——全局和局部（函数），但还是有其他办法来延长作用域链。这么说是因为有些语句可以用在作用域链的**前端临时增加一个变量对象**，该变量对象会在代码执行后被移除，这两种语句是：       
 1. try-catch语句的catch块。     
 2. with语句          
 这两个语句都会在作用域链前端添加一个变量对象。with语句以后都不建议用了就不说了。catch语句是创建一个新的变量对象，其中包含的是被抛出的错误对象的声明。       
@@ -101,13 +101,14 @@ var num2 = n1;
 
 ![4.42.png](http://upload-images.jianshu.io/upload_images/3001083-49ecfa1b17cbabe9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
 
+
 ### 相关文章链接    
  - [Javascript深入学习1——词法结构、类型、值、变量](http://liveipool.com/blog/2016/09/12/learn-javascript-1/)       
  - [JavaScript红皮书学习(1,2)--JavaScript简介](http://liveipool.com/blog/2016/12/14/JavaScript-RedBook-1,2-Introduction/)  
  - [JavaScript红皮书学习(3)--基本概念](http://liveipool.com/blog/2016/12/14/JavaScript-RedBook-3-BasicConcepts/)   
  - [JavaScript红皮书学习(4)--变量、作用域和内存问题](http://liveipool.com/blog/2016/12/19/JavaScript-RedBook-4-Variable-Scope-and-Memory/)    
  - [JavaScript红皮书学习(5)--引用类型](http://liveipool.com/blog/2016/12/22/JavaScript-RedBook-5-Reference-Type)     
-
+ - [JavaScript学习专题之--作用域](http://liveipool.com/blog/2016/12/22/JavaScript-Scope)     
 
 
 
