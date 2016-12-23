@@ -3,7 +3,6 @@ layout: post
 title: JavaScript学习专题之--闭包  
 date: 2016-12-23
 categories: blog
-tags: [JavaScript]
 description: JavaScript学习
 ---
 
