@@ -248,7 +248,29 @@ for (var i = 1; i < 5; i++) {
 ```
 第一个object.getName()执行的环境为object对象内,所以返回My object.第二排的(object.getName)()和object.getName()几乎没有区别,因此也是My object.但是第三个就有点不同了,它先执行了一个赋值语句,再调用赋值后的结果,这个赋值语句执行的作用域为全局环境下,因此被赋值后的object.getName可以看为全局环境下的一个函数,调用它,this自然指向window.          
 
-至此,算是把闭包的概念理解得差不多了,也看了一些常见的例子,但闭包的威力绝不是一篇文章就能够讲清楚的,还得在以后的学习或者做项目的过程中慢慢理解,慢慢总结.      
+## let + 闭包       
+还记得例子六中的循环和闭包吗,我们使用IIFE来解决了闭包可能会导致的一些问题,但实际上,随着ES6的出现,此问题有了更加简单的解决方法:let.       
+
+``` javascript
+	for (var i = 1; i < 5; i++) {
+		let j = i;         //使for循环中的四排代码成为了闭包的块作用域
+		setTimeout(function() {
+			console.log(j);
+		}, j * 1000)
+	}
+```
+上面的代码即可以按照每隔1秒,以此输出1到4.它的原理就是这里let隐式地劫持了for循环里的代码,这四排成为了一个块级作用域.         
+
+``` javascript
+	for (let i = 1; i < 5; i++) {
+		setTimeout(function() {
+			console.log(i);
+		}, i * 1000)
+	}
+```
+这样写和上面那段代码也可以有同样的输出,只是let不再写到for循环里去隐式地劫持了.而这样写在循环的头部,实际上**不仅把let绑定到了for循环中的代码的块作用域中,更是将其绑定到了循环的每一次迭代中**,换句话说,可以理解为**变量在循环的过程中不止被声明一次,每次迭代都会声明.随后的每个迭代都会使用上一个迭代结束时的值来初始化这个变量.**          
+**随着ES6的出现,一些新的特性会带给Javascript一些新的功能,要是能熟练掌握了这些特性,想必利用JavaScript编程的功力一定能大大增加.**          
+    
 
 ### 相关文章链接    
  - [Javascript深入学习1——词法结构、类型、值、变量](http://liveipool.com/blog/2016/09/12/learn-javascript-1/)       
@@ -258,3 +280,5 @@ for (var i = 1; i < 5; i++) {
  - [JavaScript红皮书学习(5)--引用类型](http://liveipool.com/blog/2016/12/22/JavaScript-RedBook-5-Reference-Type)     
  - [JavaScript学习专题之--作用域](http://liveipool.com/blog/2016/12/22/JavaScript-Scope)   
  - [JavaScript学习专题之--闭包](http://liveipool.com/blog/2016/12/23/JavaScript-Closures)     
+ - [JavaScript学习专题之--私有变量和ES5中的模块模式](http://liveipool.com/blog/2016/12/23/JavaScript-Private-Variable-and-ES5Modules)          
+

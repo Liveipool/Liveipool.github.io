@@ -14,7 +14,7 @@ description: JavaScript学习
  - 这些问题说明**需要一套设计良好的规则来存储变量，并且之后可以方便地找到这些变量**。这套规则被称为**作用域**。        
 
 ### 一、编译原理     
-尽管通常将JavaScript归类为“动态”或“解释执行”语言，而事实上它是一门编译语言。但与传统的编译语言不同，它不是提前编译的，编译结果也不能在分布式系统中进行移植。统编译语言的流程中，程序中的一段源代码在执行之前会经历三个步骤，统称为“编译”:        
+尽管通常将JavaScript归类为“动态”或“解释执行”语言，而事实上它是一门编译语言。但与传统的编译语言不同，它不是提前编译的，编译结果也不能在分布式系统中进行移植。传统编译语言的流程中，程序中的一段源代码在执行之前会经历三个步骤，统称为“编译”:        
 
 #### 1.分词/词法分析（Tokenizing/Lexing）     
 > 这个过程会将由字符组成的字符串分解成（对编程语言来说）有意义的代码块，这些代码块被称为词法单元（token）。例如，考虑程序var a = 2;。这段程序通常会被分解成为下面这些词法单元：var、a、=、2 、;。空格是否会被当作词法单元，取决于空格在这门语言中是否具有意义。     
@@ -154,7 +154,7 @@ JavaScript中有两种机制来实现这个目的： eval()和with。
 ##### 2.1 eval()     
 JavaScript中的eval()函数可以接受一个字符串为参数，并将其中的内容视为好像在书写时就存在于程序中这个位置的代码。换句话说，可以在你写的代码中用程序生成代码并运行，就好像代码是写在那个位置的一样。     
 根据这个原理来理解eval()，它是如何通过代码欺骗和假装成书写时（也就是词法期）代码就在那，来实现修改词法作用域环境的，这个原理就变得清晰易懂了。
-在执行eval(.之后的代码时，引擎并不“知道”或“在意”前面的代码是以动态形式插入进来，并对词法作用域的环境进行修改的。引擎只会如往常地进行词法作用域查找。     
+在执行eval().之后的代码时，引擎并不“知道”或“在意”前面的代码是以动态形式插入进来，并对词法作用域的环境进行修改的。引擎只会如往常地进行词法作用域查找。     
 考虑以下代码：     
 
 ``` javascript
@@ -252,7 +252,7 @@ function foo(a) {
 **注意最后这里是先运行IIFE,后面的def函数被当作参数传进去,而真正运行函数是def**     
 
 #### 3. 块作用域       
-**尽管函数作用域是最常见的作用域单元,当然也是现行大多数JavaScript中最普遍的设计方法,但其他类型的作用域单元也是存在的,并且通过使用其他类型的ufology单元甚至可以实现维护起来更加优秀、简洁的代码.**     
+**尽管函数作用域是最常见的作用域单元,当然也是现行大多数JavaScript中最普遍的设计方法,但其他类型的作用域单元也是存在的,并且通过使用其他类型的作用域单元甚至可以实现维护起来更加优秀、简洁的代码.**     
 **除JavaScript外的很多编程语言都支持块作用域,但在《JavaScript高级程序设计》第三版中，针对ES5说JavaScript目前是没有块作用域的，但这种说法其实不太严密，就算是截止到ES5，实际上也是有一些块作用域的，只是用得并不多而已：**     
 
 ``` javascript
@@ -268,7 +268,7 @@ console.log(a);    //1
 console.log(i);    //10
 ```
 **可见，看似有块作用域功能的if 和 for都只是空有其表，若不注意，经常会在代码中因此犯下错误。**     
-**那么，上面说的ES5中的块作用域是哪些呢？答案是：1.with 2.try/catch。**     
+**那么，上面说的ES5中的块作用域是哪些呢？答案是：1.with 2.try/catch。**       
 
 ``` javascript
 try {
@@ -279,9 +279,26 @@ try {
 
 console.log(err);    //ReferenceError: err not fount
 ```
+**但其实，从相对于块作用域能提供的好处这方面来说，with不建议使用，try/catch很少用来使用具有块作用域特点的功能.**              
 
-**但其实，相对于块作用域能提供的好处来说，它俩一个是不建议使用，一个是很少用来使用具有块作用域特点的功能，因此，截至到ES5,还是没有很好的块作用域的机制。**     
+**另外一个就是值得一提的是,有时候程序员可以通过函数作用域来模仿块作用域(有时也叫私有作用域):**         
 
+``` javascript
+(function() {
+	//这里是模仿块作用域
+})();
+
+function outputNumbers(count){
+	(function() {
+		for (var i=0; i < count; i++) {
+			alert(i);
+		}
+	})();
+}
+alert(i);    //ReferenceError
+```     
+**以上代码虽然能提供块作用域的功能,但始终只是一种模仿.总是这么写也会使得代码变得臃肿并且难以阅读.**           
+**可以说,截止至ES5,JavaScript还没有很好块作用域的机制.**          
 ![sc15.png](http://upload-images.jianshu.io/upload_images/3001083-d95afc18d41e55a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
 ![sc16.png](http://upload-images.jianshu.io/upload_images/3001083-02c4570fb3314547.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
 ![sc17.png](http://upload-images.jianshu.io/upload_images/3001083-01a7a74736d86af3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
@@ -289,7 +306,7 @@ console.log(err);    //ReferenceError: err not fount
 ![sc19.png](http://upload-images.jianshu.io/upload_images/3001083-a1587a676df1bcd7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
 ![sc20.png](http://upload-images.jianshu.io/upload_images/3001083-7bda7ff263a02789.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
 
-除了let意外，ES6还引入了**const**，同样可以用来创建块作用域变量，但其值是固定的，之后**任何试图修改值的操作都会引起错误。**参考如下代码：     
+除了let以外，ES6还引入了**const**，同样可以用来创建块作用域变量，但其值是固定的，之后**任何试图修改值的操作都会引起错误。**参考如下代码：     
 
 ``` javascript
 var foo = true;
@@ -379,4 +396,5 @@ foo = function() {
  - [JavaScript红皮书学习(5)--引用类型](http://liveipool.com/blog/2016/12/22/JavaScript-RedBook-5-Reference-Type)     
  - [JavaScript学习专题之--作用域](http://liveipool.com/blog/2016/12/22/JavaScript-Scope)   
  - [JavaScript学习专题之--闭包](http://liveipool.com/blog/2016/12/23/JavaScript-Closures)     
+ - [JavaScript学习专题之--私有变量和ES5中的模块模式](http://liveipool.com/blog/2016/12/23/JavaScript-Private-Variable-and-ES5Modules)          
 
