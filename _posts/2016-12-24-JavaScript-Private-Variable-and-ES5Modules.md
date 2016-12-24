@@ -13,7 +13,8 @@ description: JavaScript学习
 严格来讲,JavaScript中并没有私有成员的概念,所有对象属性都是公有的.不过,倒是有私有变量的概念.**任何在函数中定义的变量,都可以认为是私有变量.**      
 
 **有权访问私有变量和私有函数的公有方法被称为特权方法.**      
-有两种在对向上创建特权方法的方式:**第一种是在构造函数中定义特权方法**      
+有两种在对向上创建特权方法的方式:**第一种是在构造函数中定义特权方法**     
+
 ``` javascript
 	function myObject() {
 		var privateVariable = 10;     //私有变量
@@ -218,5 +219,5 @@ foo.doAnother();       //1,2,3
  - [JavaScript红皮书学习(5)--引用类型](http://liveipool.com/blog/2016/12/22/JavaScript-RedBook-5-Reference-Type)     
  - [JavaScript学习专题之--作用域](http://liveipool.com/blog/2016/12/22/JavaScript-Scope)   
  - [JavaScript学习专题之--闭包](http://liveipool.com/blog/2016/12/23/JavaScript-Closures)     
- - [JavaScript学习专题之--私有变量和ES5中的模块模式](http://liveipool.com/blog/2016/12/23/JavaScript-Private-Variable-and-ES5Modules)          
+ - [JavaScript学习专题之--私有变量和ES5中的模块模式](http://liveipool.com/blog/2016/12/24/JavaScript-Private-Variable-and-ES5Modules)          
 
