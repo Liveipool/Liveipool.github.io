@@ -208,7 +208,6 @@ num3 ^ num4  //6
 ![3.8.png](http://upload-images.jianshu.io/upload_images/3001083-50161b2c8a4300ae.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
 
 
-
 ### 相关文章链接    
  - [Javascript深入学习1——词法结构、类型、值、变量](http://liveipool.com/blog/2016/09/12/learn-javascript-1/)       
  - [JavaScript红皮书学习(1,2)--JavaScript简介](http://liveipool.com/blog/2016/12/14/JavaScript-RedBook-1,2-Introduction/)  
@@ -219,6 +218,5 @@ num3 ^ num4  //6
  - [JavaScript学习专题之--闭包](http://liveipool.com/blog/2016/12/23/JavaScript-Closures)     
  - [JavaScript学习专题之--私有变量和ES5中的模块模式](http://liveipool.com/blog/2016/12/24/JavaScript-Private-Variable-and-ES5Modules)      
  - [JavaScript学习专题之--this](http://liveipool.com/blog/2016/12/25/JavaScript-this)       
- - [JavaScript红皮书学习(5)--BOM](http://liveipool.com/blog/2016/12/25/JavaScript-RedBook-8-BOM)             
-
-
+ - [JavaScript红皮书学习(8)--BOM](http://liveipool.com/blog/2016/12/25/JavaScript-RedBook-8-BOM)             
+ - [JavaScript红皮书学习(6)--面向对象的程序设计](http://liveipool.com/blog/2016/12/27/JavaScript-RedBook-6-Object-Oriented)                  

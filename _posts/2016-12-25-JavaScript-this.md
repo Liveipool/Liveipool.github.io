@@ -501,6 +501,7 @@ BTW, 我们之前介绍的四条规则已经可以包含所有正常的函数,�
  - [JavaScript学习专题之--闭包](http://liveipool.com/blog/2016/12/23/JavaScript-Closures)     
  - [JavaScript学习专题之--私有变量和ES5中的模块模式](http://liveipool.com/blog/2016/12/24/JavaScript-Private-Variable-and-ES5Modules)      
  - [JavaScript学习专题之--this](http://liveipool.com/blog/2016/12/25/JavaScript-this)       
- - [JavaScript红皮书学习(5)--BOM](http://liveipool.com/blog/2016/12/25/JavaScript-RedBook-8-BOM)             
+ - [JavaScript红皮书学习(8)--BOM](http://liveipool.com/blog/2016/12/25/JavaScript-RedBook-8-BOM)             
+ - [JavaScript红皮书学习(6)--面向对象的程序设计](http://liveipool.com/blog/2016/12/27/JavaScript-RedBook-6-Object-Oriented)                  
 
 
