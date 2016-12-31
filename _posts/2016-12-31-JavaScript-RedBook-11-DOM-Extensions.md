@@ -130,3 +130,20 @@ IE, Opera, Safari, Chrome都较早的实现了innerText属性,MDN上说Firefox�
  - Selectors API(标准): 定义了几个方法,让开发人员能够基于CSS选择符从DOM中取得元素.       
  - HTML5(标准): 为标准的DOM定义了很多扩展功能.其中包括在innerHTML属性这样的事实标准基础上提供的标准定义,以及为管理焦点,设置字符集,滚动页面等而规定的扩展API.       
  - 专有扩展(尚未成为标准): 这些标准有它们独特的作用,它们已经被很多浏览器所实现,只是尚未成为标准,但只它们获得了大家的认可,说不定在不久的将来,它们就会被收录到规范的更新版本中.       
+
+
+### 相关文章链接    
+ - [Javascript深入学习1——词法结构、类型、值、变量](http://liveipool.com/blog/2016/09/12/learn-javascript-1/)       
+ - [JavaScript红皮书学习(1,2)--JavaScript简介](http://liveipool.com/blog/2016/12/14/JavaScript-RedBook-1,2-Introduction/)  
+ - [JavaScript红皮书学习(3)--基本概念](http://liveipool.com/blog/2016/12/14/JavaScript-RedBook-3-BasicConcepts/)   
+ - [JavaScript红皮书学习(4)--变量、作用域和内存问题](http://liveipool.com/blog/2016/12/19/JavaScript-RedBook-4-Variable-Scope-and-Memory/)    
+ - [JavaScript红皮书学习(5)--引用类型](http://liveipool.com/blog/2016/12/22/JavaScript-RedBook-5-Reference-Type)     
+ - [JavaScript学习专题之--作用域](http://liveipool.com/blog/2016/12/22/JavaScript-Scope)   
+ - [JavaScript学习专题之--闭包](http://liveipool.com/blog/2016/12/23/JavaScript-Closures)     
+ - [JavaScript学习专题之--私有变量和ES5中的模块模式](http://liveipool.com/blog/2016/12/24/JavaScript-Private-Variable-and-ES5Modules)      
+ - [JavaScript学习专题之--this](http://liveipool.com/blog/2016/12/25/JavaScript-this)       
+ - [JavaScript红皮书学习(8)--BOM](http://liveipool.com/blog/2016/12/25/JavaScript-RedBook-8-BOM)             
+ - [JavaScript红皮书学习(6)--面向对象的程序设计](http://liveipool.com/blog/2016/12/27/JavaScript-RedBook-6-Object-Oriented)                  
+ - [JavaScript红皮书学习(10)--DOM1](http://liveipool.com/blog/2016/12/31/JavaScript-RedBook-10-DOM1)                  
+ - [JavaScript红皮书学习(11)--DOM-Extensions](http://liveipool.com/blog/2016/12/31/JavaScript-RedBook-11-DOM-Extensions)                  
+ - [JavaScript红皮书学习(12)--DOM2-And-DOM3](http://liveipool.com/blog/2016/12/31/JavaScript-RedBook-12-DOM2-And-DOM3)                  
