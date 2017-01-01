@@ -12,7 +12,7 @@ description: JavaScript学习
  - 在ECMAScript中,引用类型是一种**数据结构**,用于将数据和功能组织在一起.        
  - 尽管ECMAScript从技术上讲是一门面向对象的语言,但它不具备传统的面向语言所支持的**类**和**接口**等基本结构.         
  - 引用类型有时也被称为**对象定义**,因为它们描述的是一类对象所具有的属性和方法.               
- - 新对象可以通过new操作符后跟一个**构造函数**或通过**字面量表示法**创建.          
+ - 新对象可以通过**new操作符**后跟一个**构造函数**或通过**字面量表示法**创建.          
 
 ## 5.1 Object 类型         
 Object是ECMAScript中使用最多的一个类型,创建Object实例的方式有两种:        
@@ -24,8 +24,8 @@ person1.name = "Nick";
 
 var person2 = {
 	name: "Nick",   //一般是这么写,key不加双引号,value如果是字符串必须得加双引号
-	"age": 29,    //key值也可以加双引号,后面是数值的话不用加双引号
-	5: true  //这里的数值属性名会自动转换为字符串
+	"age": 29,      //key值也可以加双引号,后面是数值的话不用加双引号
+	5: true         //这里的数值属性名会自动转换为字符串
 }  //二是通过对象字面量表示法
 
 alert(person.name);  //"Nick"
@@ -72,18 +72,18 @@ alert(colors instanceof Date);             //false
 ### 5.2.2 转换方法      
 
 ``` javascript
-	var colors = new Array(7);
-	colors[0] = "red";
-	colors[1] = "yellow";
-	colors[3] = "black";
+var colors = new Array(7);
+colors[0] = "red";
+colors[1] = "yellow";
+colors[3] = "black";
 
-	console.log(colors.toLocaleString());  //red,yellow,,black,,,
-	console.log(colors.toString());        //red,yellow,,black,,,
-	console.log(colors.valueOf());         //>["red","yellow",3:"black"]
-	console.log(colors);                   //>["red","yellow",3:"black"]
-	alert(colors);                         //red,yellow,,black,,,  由于alert要接收字符串参数,所以它会在后台调用toString()方法.   
-	console.log(colors.join(','));         //red,yellow,,black,,,  不给join()传任何参数,默认也是逗号
-	console.log(colors.join('@'));         //red@yellow@@black@@@
+console.log(colors.toLocaleString());  //red,yellow,,black,,,
+console.log(colors.toString());        //red,yellow,,black,,,
+console.log(colors.valueOf());         //>["red","yellow",3:"black"]
+console.log(colors);                   //>["red","yellow",3:"black"]
+alert(colors);                         //red,yellow,,black,,,  由于alert要接收字符串参数,所以它会在后台调用toString()方法.   
+console.log(colors.join(','));         //red,yellow,,black,,,  不给join()传任何参数,默认也是逗号
+console.log(colors.join('@'));         //red@yellow@@black@@@
 ```
 
 ### 5.2.3栈方法        
@@ -193,12 +193,13 @@ alert(numbers.lastIndexOf(4, 4));     //3
 ![5.32.png](http://upload-images.jianshu.io/upload_images/3001083-201feac8c8d10036.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)      
 
 ![5.33.png](http://upload-images.jianshu.io/upload_images/3001083-7dad2d929f493c39.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)      
+
 ``` javascript
 	var now = new Date();            //无参数时,新创建的对象自动获得当前日期和时间
 
 	var date1 = new Date();
 	var date2 = Date.now();
-	var	date3 = +new Date();
+	var date3 = +new Date();
 
 	console.log("date1: ", date1);   //date1:  Tue Dec 20 2016 23:50:48 GMT+0800 (CST)
 	console.log("date2: ", date2);   //date2:  1482249048596
@@ -258,7 +259,7 @@ ECMAScript5明确规定,使用正则表达式字面量必须像直接调用RegEx
 ### 5.4.4 模式的局限性      
 ![5.4.4.png](http://upload-images.jianshu.io/upload_images/3001083-ccee79090774e234.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)         
 
-##5.5 Function 类型         
+## 5.5 Function 类型         
 每个函数都是Function类型的实例,而且都与其他引用类型一样具有属性和方法.由于函数是对象,因此函数名实际上也是一个指向函数对象的指针,不会与某个函数绑定,如:      
 
 ``` javascript
