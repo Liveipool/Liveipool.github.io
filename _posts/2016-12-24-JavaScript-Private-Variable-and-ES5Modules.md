@@ -69,6 +69,7 @@ description: JavaScript学习
 随着ES6的出现,JavaScript终于有了一个完善的模块体系,但是在系统的学习ES6的模块之前,我们还是先了解一下截至到ES5, JavaScript是怎样来实现模块的.          
 
 考虑以下的代码:      
+
 ``` javascript
 function coolModule() {
 	var something = "cool";      //私有变量
@@ -127,7 +128,7 @@ foo.doAnother();       //1,2,3
 	foo.doAnother();       //1,2,3
 ```
 
-**模块模式另一个简单但强大的用法是命名将要作为公共API返回的对象: **      
+**模块模式另一个简单但强大的用法是命名将要作为公共API返回的对象:**      
 
 ``` javascript
 	var foo = (function coolModule(id) {

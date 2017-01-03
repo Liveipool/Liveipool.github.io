@@ -15,7 +15,7 @@ BOM的核心对象是window，它表示**浏览器的一个实例**。
 在浏览器中，window对象有双重角色，它既是**通过JavaScript访问浏览器的一个接口**，又是**ECMAScript规定的Global对象。**     这意味着在网页中定义的任何一个对象、变量和函数，都以window作为其Global对象。       
 
 ### 8.1.1 全局作用域       
-由于window对象同时扮演着ECMAScript中Global对象的角色卖淫此所有在全局作用域中声明的变量、函数都会变成window对象的属性和方法。      
+由于window对象同时扮演着ECMAScript中Global对象的角色,因此所有在全局作用域中声明的变量、函数都会变成window对象的属性和方法。      
 
 ``` javascript
 var age = 29;
