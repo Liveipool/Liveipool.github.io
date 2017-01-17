@@ -89,7 +89,7 @@ HTML5新增了两个与媒体相关的标签,让开发人员不必依赖任何�
 
 要解决这个问题,首选使用**hashchange事件**,通过这个事件,可以知道URL参数什么时候发生了变化,即什么时候该有所反应.而通过状态管理API,能够在不加载新页面的情况下改变浏览器的URL.为此,需要使用history.pushState()方法,该方法可以接收三个参数:1.状态对象. 2.新状态的标题. 3.可选的相对URL.但是,这个方法现在还未被所有浏览器完全支持,如firefox会忽略第二个参数等.       
 ![16.41.png](http://upload-images.jianshu.io/upload_images/3001083-bec20c03116f8882.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)       
-![16.42.png](http://upload-images.jianshu.io/upload_images/3001083-8d31bb807ced42c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)       
+![16.42.png](http://upload-images.jianshu.io/upload_images/3001083-aa7660d17ac6f62b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)      
 ![16.43.png](http://upload-images.jianshu.io/upload_images/3001083-0fd0ccae345e4372.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)       
 
 ## 16.4 小结       
