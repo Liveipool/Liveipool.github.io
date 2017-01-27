@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CSS 标准(2)--为样式找到应用目标
+title: CSS 标准决方案(2)--为样式找到应用目标
 date: 2017-01-26
 categories: blog
 description: CSS学习
