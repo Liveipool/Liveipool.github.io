@@ -40,7 +40,7 @@ p { color: rgb(100%,0%,0%); }
 下面的例子为 title="W3School" 的所有元素设置样式：     
 
 ```
-[title=W3School]
+[title="W3School"]
 {
 border:5px solid blue;
 }
@@ -48,7 +48,7 @@ border:5px solid blue;
 下面的例子为包含指定值的 title 属性的所有元素设置样式。适用于由空格分隔的属性值：     
 
 ```
-[title~=hello] { color:red; }
+[title~="hello"] { color:red; }
 ```
 属性选择器在为不带有 class 或 id 的表单设置样式时特别有用：     
 
@@ -72,6 +72,7 @@ input[type="text"]
 ```
 a[href][title] {color:red;}
 ```
+
 
 #### text-indent     
 CSS 提供了 text-indent 属性，该属性可以方便地实现文本缩进。     
@@ -211,7 +212,7 @@ some text
 .important.urgent {background:silver;}
 ```
 
-##### 伪类     
+#### 伪类     
  - 属性	描述	     
  - :active	向被激活的元素添加样式。	     
  - :focus	向拥有键盘输入焦点的元素添加样式。	     
@@ -278,6 +279,7 @@ p.test {font-weight:bold}
 <body>....</body>
 </html>
 ```
+
 ##### 不同的媒介类型     
  - 注释：媒介类型名称对大小写不敏感。     
  - 媒介类型	描述     
