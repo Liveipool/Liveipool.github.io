@@ -296,4 +296,11 @@ p.test {font-weight:bold}
 
 #### margin可以为负值，padding不能为负值。     
 
+#### 内部引用的锚      
+下面的第一个锚包含一个片段标识符,当用户单击这个锚时,页面将跳到第二个锚的位置:      
 
+```
+<p><a href="#mainContent">Skip to main content!</a></p>
+// ...
+<h1><a name="mainContent">Welcome!</a></h1>
+```
