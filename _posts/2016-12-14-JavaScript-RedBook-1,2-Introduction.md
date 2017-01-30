@@ -28,7 +28,7 @@ JavaScript诞生于1995年，当时，它的主要目的是处理以前由服务
 ![1.24.png](http://upload-images.jianshu.io/upload_images/3001083-810f0f4adba3947a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)      
 
 ![1.25.png](http://upload-images.jianshu.io/upload_images/3001083-ebcbe4a6ea101576.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)      
-**2014年底，ECMAScript6已出， ECMAScript7似乎也在制作之中， ES6好像引入了类的概念，这个看完红皮书后再去深入学习比较。**  
+**2015年6月,ES6(也叫ES2015)正式发布了.**  
 
 #### 1.2.2 文档对象模型（Document Object Model， DOM）   
 ![1.2.2.png](http://upload-images.jianshu.io/upload_images/3001083-a6a6db373b2c15a8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)   
