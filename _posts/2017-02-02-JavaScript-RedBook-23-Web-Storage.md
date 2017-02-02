@@ -13,7 +13,8 @@ description: JavaScript学习
 开发离线应用的第一步是要知道设备是在线还是离线，HTML5为此定义了一个navigator.onLine属性，这个属性值为true表示设备能上网，但这个属性在各浏览器上的支持情况稍有差异，慎用。      
 ![23.1.png](http://upload-images.jianshu.io/upload_images/3001083-4cecc4c3fb9b6f9f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)      
 
-## 23.2 应用缓存      
+## 23.2 应用缓存   
+[应用缓存 w3school](http://www.w3school.com.cn/html/html5_app_cache.asp)          
 ![23.21.png](http://upload-images.jianshu.io/upload_images/3001083-f7d380e30a2c7aab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)      
 ![23.22.png](http://upload-images.jianshu.io/upload_images/3001083-0540a07d88b91183.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)      
 ![23.23.png](http://upload-images.jianshu.io/upload_images/3001083-53adf2a35c2ea5b7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)      
