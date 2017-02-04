@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaScript红皮书学习(22)--离线应用与客户端存储
+title: JavaScript红皮书学习(23)--离线应用与客户端存储
 date: 2017-02-02
 categories: blog
 description: JavaScript学习
