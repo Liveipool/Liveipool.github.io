@@ -49,7 +49,7 @@ description: JavaScript学习
 ![25.4.51.png](http://upload-images.jianshu.io/upload_images/3001083-e152f1541e424f6a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)      
 ![25.4.52.png](http://upload-images.jianshu.io/upload_images/3001083-1afc787d5e529468.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)      
 
-**使用FormData上传文件，eau服务器端就好像是接收到了常规的表单数据一样，一切按部就班地处理即可。**      
+**使用FormData上传文件，服务器端就好像是接收到了常规的表单数据一样，一切按部就班地处理即可。**      
 
 ## 25.5 Web 计时      
 ![25.51.png](http://upload-images.jianshu.io/upload_images/3001083-557631f48174b091.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)      
