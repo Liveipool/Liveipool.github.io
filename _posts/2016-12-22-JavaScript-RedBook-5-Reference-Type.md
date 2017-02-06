@@ -219,7 +219,7 @@ alert(numbers.lastIndexOf(4, 4));     //3
 ![5.3.31.png](http://upload-images.jianshu.io/upload_images/3001083-a15956dc3aebb048.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)      
 ![5.3.32.png](http://upload-images.jianshu.io/upload_images/3001083-278fbfa5e4a8a09d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)           
 
-## 5.4 RegExp 类型          
+## 5.4 RegExp 类型（regular expression）          
 [MDN上对正则表达式的讲解](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions)      
  
 ![5.41.png](http://upload-images.jianshu.io/upload_images/3001083-9998c6aee380ef92.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)      
@@ -353,7 +353,7 @@ alert(result1);            //20
 ### 5.5.5 函数属性和方法          
  - 每个函数都包含两个属性: length和prototype.      
  - 对于ECMAScript中的引用类型而言,prototype是保存它们所有实例和方法的真正所在.      
- - 每个函数都包含两个飞机成而来的方法: apply() 和 call(). 这两个方法的用途都是在**特定的作用域**中,实际上等于设置函数体内this对象的值.      
+ - 每个函数都包含两个非继承而来的方法: apply() 和 call(). 这两个方法的用途都是在**特定的作用域**中,实际上等于设置函数体内this对象的值.      
  - 在严格模式下,未指定环境对象而调用函数,则this值不会转型为window,除非明确把函数添加到某个对象或者调用apply()或call(),否则this值将是undefined.         
 
 ![5.5.51.png](http://upload-images.jianshu.io/upload_images/3001083-2cacf5cd29da13d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)      
