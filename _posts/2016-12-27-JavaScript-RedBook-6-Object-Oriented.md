@@ -8,7 +8,7 @@ description: JavaScript学习
 
 # 面向对象的程序设计      
 对象一直是各种编程语言中的重要概念,面向对象也一直是一个非常热点的话题,身边的程序员常常抱怨找不到对象,可见对象不仅重要,也非常地难以彻底掌握.      
-面向对象(Object-Oriented, OO)的语言有一个标志,那就是它们都有类的概念,而通过类可以创建任意多个具有相同属性的方法的对象.ECMAScript中没有类的概念,因此它的对象也与基于类的语言中的对象有所不同.      
+面向对象(Object-Oriented, OO)的语言有一个标志,那就是它们都有类的概念,而通过类可以创建任意多个具有相同属性的方法的对象.ECMAScript中没有类的概念（截至ES5）,因此它的对象也与基于类的语言中的对象有所不同.      
 ECMA-262把对象定义为:"无序属性的集合,其属性可以包含基本值,对象或者函数.",严格来讲,这就相当于说对象是一组没有特定顺序的值.对象的每个属性或方法都有一个名字,而每个名字都映射到一个值.正因为这样,我们可以把ECMAScript的对象想象成散列表:无非就是一组名值对,其中值可以是数据或函数.      
 
 ## 6.1 理解对象        
@@ -152,7 +152,7 @@ console.log(person1 instanceof Person);         //true
 **使用构造函数的一个确定在于,每个方法都要在每个实例上重新创建一遍,因此不同实例上的同名函数也是不相等的.这样的情况确实显得有点累赘,为了解决这个问题,我们引入了原型模式.**      
 
 ### 6.2.3 原型模式      
- - 要想理解清楚这一部分,首先要牢记三个重要概念: **构造函数(constructor)**、**原型对象(prototype)**、**实例**.      
+ - 要想理解清楚这一部分,首先要牢记三个重要概念: **构造函数(constructor)**、**原型对象(Prototype)**、**实例**.      
  - 我们创建的每个函数都有一个**prototype(原型)属性**,这个属性是一个**指针**,指向**原型对象**.      
  - 默认情况下,每个**原型对象**也都有一个**constructor指针**,它指向**构造函数**.      
  - 每个**实例**都有一个**[[Prototype]]指针**,指向**原型对象**.      
@@ -174,7 +174,7 @@ console.log(person1 instanceof Person);         //true
 	console.log(person1.sayName === person2.sayName); //true
 
 	console.log(Person.prototype.constructor === Person);  //true
-	console.log(person1.__proto__);  
+	console.log(person1.__proto__);  //各浏览器实现的实例的[[Prototype]]属性
 	console.log(Person.prototype); 
     /*上面两行都输出一个对象: {
 		age: 29,
