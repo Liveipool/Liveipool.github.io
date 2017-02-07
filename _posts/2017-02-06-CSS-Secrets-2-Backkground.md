@@ -31,7 +31,7 @@ calc()是CSS3中引入的一个函数，可以进行四则运算。
 
 ```
 background: url("lallana.png") no-repeat;
-background-position: calc(100% - 20px) calc(100% - 10px);  //注意这里的顺序
+background-position: calc(100% - 20px) calc(100% - 10px);  //注意这里的顺序 100%-20是水平偏移量，后面一个是垂直偏移量。
 ```
 
 **注意在calc()函数内部的 - 和 + 运算符两侧需要各加一个空白符，否则会产生解析错误。这个规则是为了向前兼容，未来，在calc()内部可能会允许使用关键字，而这些关键字可能会带有连字符。**      
@@ -86,7 +86,8 @@ div {
 通过设置background-size来实现重复平铺的多条条纹。      
 ![2.55.png](http://upload-images.jianshu.io/upload_images/3001083-c12d3ecfa106d2a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)      
 
-由于规范中说到：      
+由于规范中说到：     
+ 
 > 如果某个色表的位置值比整个列表中在它之前的位置值都要小，则该色标的位置值会被设置为它前面的所有色标值的最大值。      
 
 因此上面的代码也可以写为：      

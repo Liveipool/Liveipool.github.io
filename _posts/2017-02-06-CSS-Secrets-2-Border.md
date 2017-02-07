@@ -94,8 +94,8 @@ div {
 ```
 div {
 	background-color: yellowgreen;
-	border: #655 solid 10px; 
-	outline: solid 5px deeppink;
+	border: 10px solid #655; 
+	outline: 5px solid deeppink;
 }
 ```
 ![2.22.png](http://upload-images.jianshu.io/upload_images/3001083-046d916a334c7903.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)      
