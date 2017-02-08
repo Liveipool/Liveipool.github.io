@@ -56,7 +56,7 @@ if (someNode.nodeType == 1) {
 3. replaceChild(). 两个参数:新的节点和要被替换掉的节点.         
 4. removeChild(). 一个参数:想要移除的节点.         
 通过replaceChild()和removeChild()方法移除的节点**仍然为文档所有**,只不过在文档中已经没有了自己的位置.         
-这四个方法操作的都是某个节点的字节点,也就是说,要使用这几个方法必须先取得父节点.另外并不是所有类型的节点都可以有字节点,如果在不支持字节点的节点上调用了这些方法,将会导致错误发生.         
+这四个方法操作的都是某个节点的子节点,也就是说,要使用这几个方法必须先取得父节点.另外并不是所有类型的节点都可以有子节点,如果在不支持子节点的节点上调用了这些方法,将会导致错误发生.         
 
 ![10.1.18.png](http://upload-images.jianshu.io/upload_images/3001083-ae22d33cc929048c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)         
 ![10.1.19.png](http://upload-images.jianshu.io/upload_images/3001083-a26e2ffef471cb06.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)         
@@ -81,7 +81,7 @@ if (someNode.nodeType == 1) {
 这些属性提供了document对象所表现的网页的一些信息.有:         
 1. document.title         
 2. document.URL: 包含页面完整的URL         
-3. document.domai: 包含页面的域名         
+3. document.domain: 包含页面的域名         
 4. document.referrer: 保存着链接到当前页面的那个页面的URL         
 2,3,4属性都存在与请求的HTTP头部,只不过是通过这些属性让我们能够在JavaScript中访问它们而已,一般来说这四个属性都只是用来读的,需要改时再去查看具体的用法.         
 
@@ -208,7 +208,7 @@ DocumentType类型在Web浏览器中并不常用.
 **一般来说,应该尽量减少访问NodeList的次数.因为每次访问NodeList,都会运行一次基于文档的查询(这也是为什么每次取到的NodeList.length不一样的愿意).所以,可以考虑将NodeList中取得的值缓存起来.**         
 
 ## 10.3 小结           
- - DOM是语言中立的API,用于访问和操作HTML文档.DOM1级将HTML文档形象地看作一个层次化的节点树,可以使用JavaScript来操作者各节点树,进而改变底层文档的外观和结构.         
+ - DOM是语言中立的API,用于访问和操作HTML文档.DOM1级将HTML文档形象地看作一个层次化的节点树,可以使用JavaScript来操作各节点树,进而改变底层文档的外观和结构.         
  - DOM由各种节点构成.         
  - 最基本的节点类型是Node,用于抽象地表示文档中一个独立的部分.所有其他类型都继承自Node.         
  - Document类型表示整个文档,是一组分层节点的根节点.在JavaScript中,document对象是Document的一个实例.使用document对象,有很多种方式可以查询和取得节点.         

@@ -102,7 +102,7 @@ div {
 ```
 ![13.1.png](http://upload-images.jianshu.io/upload_images/3001083-59c9103af8ae175a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)         
 但是，熟悉的问题来了，上面的文字也变形了：对元素使用了3D变形之后，其内部的变形效应是“不可逆转”的（在2D变形的体系之下，内部的逆向变形可以抵消外部的变形效应）。         
-因此，我们又可以使用嗯伪元素来解决这个问题：         
+因此，我们又可以使用伪元素来解决这个问题：         
 
 ```
 div {
