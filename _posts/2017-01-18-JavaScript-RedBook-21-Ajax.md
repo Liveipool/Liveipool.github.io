@@ -11,7 +11,8 @@ description: JavaScript学习
 2005年,Jeses James Garrett发表了一篇文章,题为: [Ajax: A new Approach to Web Applications](http://adaptivepath.org/ideas/ajax-new-approach-web-applications/) . 它在文章中讲道: **Ajax不只是一项技术,它是多项技术的组合.** 而也就是这篇文章,将Web引领向了新时代.     
 
 (Ajax定义的原文):     
->Ajax isn’t a technology. It’s really several technologies, each flourishing in its own right, coming together in powerful new  ways. Ajax incorporates:     
+
+> Ajax isn’t a technology. It’s really several technologies, each flourishing in its own right, coming together in powerful new  ways. Ajax incorporates:     
 > standards-based presentation using XHTML and CSS;     
 > dynamic display and interaction using the Document Object Model;     
 > data interchange and manipulation using XML and XSLT;     
