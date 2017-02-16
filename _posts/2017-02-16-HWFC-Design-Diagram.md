@@ -11,8 +11,9 @@ description: 前端学习
 
 #### 相关链接               
  - [HWFC球队网站项目需求文档](http://liveipool.com/blog/2017/02/16/HWFC-Requirements-Documentation)                      
- - [HWFC球队网站项目编码规范](http://liveipool.com/blog/2017/02/16/HWFC-Codeing-Specification)                  
+ - [HWFC球队网站项目编码规范](http://liveipool.com/blog/2017/02/16/HWFC-Coding-Specification)                  
  - [HWFC球队网站项目设计图、原型图](http://liveipool.com/blog/2017/02/16/HWFC-Design-Diagram)                        
+               
 
 ## 主页          
 ![home.png](http://upload-images.jianshu.io/upload_images/3001083-84baf92b205197cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)          

@@ -9,9 +9,11 @@ description: 前端学习
 # 编码规范         
 **由于石墨文档需要登录才能访问，因此我将HWFC项目已有的需求文档、编码规范、设计图等放到个人博客上以供查看。**           
 
-#### 相关链接     
- - [HWFC球队网站项目需求文档](http://liveipool.com/blog/2017/02/16/HWFC-Requirements-Documentation)            
- - [HWFC球队网站项目编码规范](http://liveipool.com/blog/2017/02/16/HWFC-Codeing-Specification)                  
+#### 相关链接               
+ - [HWFC球队网站项目需求文档](http://liveipool.com/blog/2017/02/16/HWFC-Requirements-Documentation)                      
+ - [HWFC球队网站项目编码规范](http://liveipool.com/blog/2017/02/16/HWFC-Coding-Specification)                  
+ - [HWFC球队网站项目设计图、原型图](http://liveipool.com/blog/2017/02/16/HWFC-Design-Diagram)                        
+        
 
 良好的编码规范，对于提高团队协作效率、提高代码质量、增强系统可维护性具有重要作用，确定编码规范，说白了就是希望大家合作编写的代码看起来都像是“一个人”写出来的，为了达到这个目标，我参考很多资料（google 开源项目风格指南），制定了一下一些规范，我们在合作开发的过程当中应当严格按照规范进行代码编写。         
 
