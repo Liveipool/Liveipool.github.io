@@ -6,13 +6,14 @@ categories: blog
 description: 前端学习
 ---
 
-# HWFC球队网站项目需求文档           
+# 需求文档           
 
-**由于石墨文档需要登录才能访问，因此我将已有的需求文档、开发规范、设计图等放到个人博客上以供查看。**           
+**由于石墨文档需要登录才能访问，因此我将HWFC项目已有的需求文档、编码规范、设计图等放到个人博客上以供查看。**           
 
-#### 相关链接     
- - [HWFC球队网站项目需求文档](http://liveipool.com/blog/2017/02/16/HWFC-Requirements-Documentation)      
-
+#### 相关链接               
+ - [HWFC球队网站项目需求文档](http://liveipool.com/blog/2017/02/16/HWFC-Requirements-Documentation)                      
+ - [HWFC球队网站项目编码规范](http://liveipool.com/blog/2017/02/16/HWFC-Codeing-Specification)                  
+ - [HWFC球队网站项目设计图、原型图](http://liveipool.com/blog/2017/02/16/HWFC-Design-Diagram)                        
 
 ## 一、项目介绍           
 Hello World Football Club 官方网站。           
