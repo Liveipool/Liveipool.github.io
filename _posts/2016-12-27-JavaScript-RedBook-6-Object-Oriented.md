@@ -220,7 +220,7 @@ console.log(person1 instanceof Person);         //true
 为了减少不必要的输入,也为了从视觉上更好地封装原型的功能,更常见的做法是用一个包含所有属性和方法的对象字面量来重写整个原型对象.      
 
 ``` javascript
-function() {}
+function Person() {}
 
 Person.prototype = {
 	name: "liveipool",
@@ -233,18 +233,21 @@ Person.prototype = {
 **但是,这样将Person.prototye设置为等于一个以对象字面量形式创建的新对象,会使constructor属性不再指向Person了.**      
 
 ``` javascript
-var friend = new Person();
-alert(friend instanceof Object);  //true
-alert(friend instanceof Person);  //true
-alert(friend.constructor === Person);  //false
-alert(friend.constructor === Object);  //true
+	var friend = new Person();
+	console.log(friend);
+	console.log(friend instanceof Object);  //true
+	console.log(friend instanceof Person);  //true
+	console.log(Person.prototype.constructor === Person);  //false
+	console.log(Person.prototype.constructor === Object);  //true
+	console.log(friend.constructor === Person);  //false
+	console.log(friend.constructor === Object);  //true
 ```
 尽管instanceof操作符还能返回正确的结果,但通过constructor已经无法确定对象的类型了.      
 如果实在需要constructor属性,可以显式地进行设置:      
 
 
 ``` javascript
-function() {}
+function Person() {}
 
 Person.prototype = {
 	constructor: Person,  //但是这种方式重设constructor会导致它的[[Enumerable]]特性被设置为true,而默认情况下,原生的constructor是不可枚举的.
