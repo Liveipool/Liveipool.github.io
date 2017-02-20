@@ -8,12 +8,17 @@ description: 前端学习
 
 # 需求文档           
 
-**由于石墨文档需要登录才能访问，因此我将HWFC项目已有的需求文档、编码规范、设计图等放到个人博客上以供查看。**           
+**由于石墨文档需要登录才能访问，因此我将HWFC项目已有的需求文档、编码规范、设计图、原型图以及当时自己阅读项目初始包后的一些总结等放到个人博客上以供查看。**           
 
 #### 相关链接               
  - [HWFC球队网站项目需求文档](http://liveipool.com/blog/2017/02/16/HWFC-Requirements-Documentation)                      
  - [HWFC球队网站项目编码规范](http://liveipool.com/blog/2017/02/16/HWFC-Coding-Specification)                  
- - [HWFC球队网站项目设计图、原型图](http://liveipool.com/blog/2017/02/16/HWFC-Design-Diagram)                        
+ - [HWFC球队网站项目设计图、原型图](http://liveipool.com/blog/2017/02/16/HWFC-Design-Diagram)                      
+ - [HWFC项目包理解（一）-- 从目录结构和package.json开始 ](http://liveipool.com/blog/2016/12/18/Understanding-of-HWFC-Project-1/)      
+ - [HWFC项目包理解（二）-- webpack-dev-middleware and webpack-hot-middleware](http://liveipool.com/blog/2016/12/18/Understanding-of-HWFC-Project-2/)        
+ - [HWFC项目包理解（三）-- 三个 webpack.conf.js 文件](http://liveipool.com/blog/2016/12/18/Understanding-of-HWFC-Project-3/)   
+ - [HWFC项目包理解（四）-- Utils 和 Config/](http://liveipool.com/blog/2016/12/18/Understanding-of-HWFC-Project-4/)               
+                         
 
 ## 一、项目介绍           
 Hello World Football Club 官方网站。           

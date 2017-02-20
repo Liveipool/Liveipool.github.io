@@ -31,6 +31,7 @@ gulp.task('default', function() {
 至此，在命令行输入gulp命令就可以运行项目了，但现在自然是什么输出都没有。        
 
 ### 二、使用gulp-connect实现一个简单的服务器           
+
 ```
 gulp.task('webserver', function() {
 	connect.server({
@@ -46,7 +47,7 @@ gulp.task('webserver', function() {
 ![studying-frame目录结构.png](http://upload-images.jianshu.io/upload_images/3001083-c65c46385c112d9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)    
 
 这个root属性不设置的话会默认在根目录下，此框架中，即为studying-frame目录下。          
-而程序的入口，则默认为root设置的目录下的index.html文件，这个应该也可以更改，具体可查看gulp-connect的文档。            
+而程序的入口，则默认为设置的root目录下的index.html文件，这个应该也可以更改，具体可查看gulp-connect的文档。            
 至此，一个简单的服务器就实现了，只要我们在默认的目录下添加对应的index.html文件，就可以通过gulp命令启动并在浏览器中通过默认的8080端口来看这个index.html文件的效果了，因此，接下来我们需要使tmp目录下有我们需要的index.html文件。        
 
 ### 三、添加gulp-sass、gulp-jade等插件          
@@ -105,16 +106,16 @@ html
 	head
 		meta(charset="utf-8")
 		title studying-frame
-	//- inject:css
-	link(rel="stylesheet", href="/styles/index.css")
-	//- css文件会自动注入到inject：css和endinject之间
-	//- endinject 
+		//- inject:css
+		link(rel="stylesheet", href="/styles/index.css")
+		//- css文件会自动注入到inject：css和endinject之间
+		//- endinject 
 	body
 		block content
-	//- inject:js
-	script(src="/scripts/index.js")
-	//- js文件会自动注入到inject：js和endinject之间
-	//- endinject
+		//- inject:js
+		script(src="/scripts/index.js")
+		//- js文件会自动注入到inject：js和endinject之间
+		//- endinject
 ```    
 
 
@@ -247,7 +248,7 @@ gulp.task('default', ['webserver', 'clean', 'sass', 'css', 'js', 'static', 'inje
 
 ![gulp.png](http://upload-images.jianshu.io/upload_images/3001083-059429f8940bc7ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
 可以看出，这里好多命令执行了几遍，可能是因为我在里面的一些依赖关系没有理清或者多个文件就会有多次inject等的情况，不过这个就需要看更多和gulp相关的文档、文章了，这里只是搭建了一个简单的框架，要想给一个大项目搭建框架，还需要学习得更加深入才行。            
-总算是写完了这篇blog，内容不多，就一篇小小的总结，但也是踩过的坑了，以后再遇到相同的问题时，希望能够感觉更加得心印手吧，已是25：05分了，睡觉了～        
+总算是写完了这篇blog，内容不多，就一篇小小的总结，但也是踩过的坑了，以后再遇到相同的问题时，希望能够感觉更加得心应手吧，已是25：05分了，睡觉了～        
 
 
 

@@ -13,11 +13,14 @@ description: HWFC项目包理解
 > 这个文件非常重要，在HWFC项目包中，有一个基础的webpack.base.conf.js文件，还有两个对应不同环境的文件,一个是"development"的webpack.dev.conf.js,一个是"production"的webpack.prod.conf.js,这两个文件通过webpack-merge插件合并webpack.base.conf.js,成为两种环境下利用webpack打包时的完整配置文件,这些文件里包含了整个打包流程的各种配置信息。     
 > 下面,我们还是结合代码和注释来理解.     
 
-## 各文链接     
+#### 相关链接               
+ - [HWFC球队网站项目需求文档](http://liveipool.com/blog/2017/02/16/HWFC-Requirements-Documentation)                      
+ - [HWFC球队网站项目编码规范](http://liveipool.com/blog/2017/02/16/HWFC-Coding-Specification)                  
+ - [HWFC球队网站项目设计图、原型图](http://liveipool.com/blog/2017/02/16/HWFC-Design-Diagram)                      
  - [HWFC项目包理解（一）-- 从目录结构和package.json开始 ](http://liveipool.com/blog/2016/12/18/Understanding-of-HWFC-Project-1/)      
  - [HWFC项目包理解（二）-- webpack-dev-middleware and webpack-hot-middleware](http://liveipool.com/blog/2016/12/18/Understanding-of-HWFC-Project-2/)        
  - [HWFC项目包理解（三）-- 三个 webpack.conf.js 文件](http://liveipool.com/blog/2016/12/18/Understanding-of-HWFC-Project-3/)   
- - [HWFC项目包理解（四）-- Utils 和 Config/](http://liveipool.com/blog/2016/12/18/Understanding-of-HWFC-Project-4/)               
+ - [HWFC项目包理解（四）-- Utils 和 Config/](http://liveipool.com/blog/2016/12/18/Understanding-of-HWFC-Project-4/)              
 
 ## webpack.base.conf.js        
 
