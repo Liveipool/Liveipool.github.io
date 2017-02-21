@@ -7,6 +7,7 @@ description: JavaScript学习
 ---
 
 # 客户端检测      
+**在JavaScript中检查兼容性时主要是进行能力检测，在CSS和HTML中主要是做好回退机制，即在浏览器不支持某属性时做到平稳退化。**       
 ![9.0.png](http://upload-images.jianshu.io/upload_images/3001083-94ec13d7b32f3233.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)      
 **在实际开发中，应将能力检测作为下一步解决方案的一句，而不是用它来判断用户使用的是什么浏览器！**      
 
