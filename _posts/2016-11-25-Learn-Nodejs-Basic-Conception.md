@@ -9,7 +9,7 @@ description: Nodejs学习摘要
 
 
 # Node.js学习摘要之基本概念    
- -“如果成真的话，以后开发Web应用就只需要一种语言了。”       
+ - “如果成真的话，以后开发Web应用就只需要一种语言了。”       
  - 2009年，RyanDahl在一个Javascript大会上宣布了一项名为Node.js的新技术，而Node以其异步IO、服务器端Javascript的特点为Web开发掀开了新的篇章。    
  - V8是Google为Chrome Web浏览器设计的JavaScript解释器和虚拟机，它运行JavaScript非常快。可以通过V8引擎内嵌到操作系统的集成层，来让Javascript享受到底层操作系统的异步接口，从而实现将其带到服务器端的目的。Node.js快速高效的优点得益于一种叫事件轮询（event loop）的技术，以及其构建于V8之上。     
  - V8做了一件很酷的事，它始终坚定不移地实现最新版本的ECMA标准。Nodejs的核心团队也是如此，只要你安装的是最新版本的Node，你总能使用到最新版本的V8.    
