@@ -1,9 +1,9 @@
 ---
 layout: post
 title: gulp 和 grunt 的对比
-date: 2017-02-22
+date: 2017-02-23
 categories: blog
-description: 前端学习
+description: JavaScript学习
 ---
 
 # gulp 和 grunt 的对比          
