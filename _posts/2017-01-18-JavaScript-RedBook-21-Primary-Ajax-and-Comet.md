@@ -92,7 +92,7 @@ var xhr = new XMLHttpRequest();
 xhr.open("get", "/get", true);
 function addURLParam(url, name, value) {
 	url += (url.indexOf("?") == -1 ? "?" : "&");
-	url += decodeURIComponent(name) + "=" + decodeURIComponent(value);
+	url += encodeURIComponent(name) + "=" + encodeURIComponent(value);
 	return url
 };
 var url = "/get";
@@ -143,9 +143,11 @@ xhr.open("post", "/post", true);
 ![21.3.21.png](http://upload-images.jianshu.io/upload_images/3001083-f4f0d0cafed563f0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
 ![21.3.22.png](http://upload-images.jianshu.io/upload_images/3001083-d6f98810a2d25d75.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
 
-## 21.4 跨源资源共享(CORS)     
-**这一节的内容由于mdn上也不太查得到,浏览器的兼容性也不好,自己试了一些也觉得不太对,没怎么理解,就先把内容都放上了,有时间有条件了再详细验证学习下.**     
-
+## 21.4 跨源资源共享(CORS)  
+当一个资源请求一个其它域名的资源时会发起一个跨域HTTP请求(cross-origin HTTP request)。比如说请求另外一个域名下的某张图片。          
+但是这样的跨源请求会有安全问题，所以浏览器都会将跨源请求发回的资源进行拦截。            
+但为了使Web应用能更强大，W3C推荐了一种新的机制，即跨源资源共享（Cross-Origin Resource Sharing (CORS)）。这种机制让Web应用服务器能支持跨站访问控制，从而可以安全地进行跨站数据传输。               
+CORS背后的基本思想是，使用自定义的HTTP头部让浏览器与服务器进行沟通，从而决定请求或响应是应该成功还是失败。         
 ![21.4.png](http://upload-images.jianshu.io/upload_images/3001083-11bb98ae4bf746d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
 
 ### 21.4.1 IE对 CORS 的实现     
@@ -192,7 +194,20 @@ xhr.open("post", "/post", true);
 ### 21.5.4 服务器发送事件     
 ![21.5.4.png](http://upload-images.jianshu.io/upload_images/3001083-44d3a65ae138a18c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
 
-### 21.5.5 Web Socket     
+### 21.5.5 Web Socket  
+WebSocket protocol 是HTML5一种新的协议。它实现了浏览器与服务器全双工通信(full-duple)。一开始的握手需要借助HTTP请求完成。      
+在浏览器中通过http仅能实现单向的通信,comet可以一定程度上模拟双向通信,但效率较低.HTML5定义了WebSocket协议，能更好的节省服务器资源和带宽并达到实时通讯。在支持HTML5的浏览器上 ，可以使用WebSocket。但在如IE8等不完全支持HTML5的浏览器上，还是使用comet来模拟。     
+现很多网站为了实现即时通讯，所用的技术都是轮询(polling)。轮询是在特定的的时间间隔（如每1秒），由浏览器对服务器发出HTTP request，然后由服务器返回最新的数据给客户端的浏览器。这种传统的HTTP request 的模式带来很明显的缺点 – 浏览器需要不断的向服务器发出请求，然而HTTP request 的header是非常长的，里面包含的有用数据可能只是一个很小的值，这样会占用很多的带宽。           
+而使用Comet和Ajax来模拟双向通信，虽然可达到全双工通信，但依然需要发出请求。      
+在 WebSocket API，浏览器和服务器只需要做一个握手的动作，然后，浏览器和服务器之间就形成了一条快速通道。两者之间就直接可以数据互相传送。在此WebSocket 协议中，为我们实现即时服务带来了两大好处：         
+1. Header：互相沟通的Header是很小的-大概只有 2 Bytes           
+2. Server Push：服务器的推送，服务器不再被动的接收到浏览器的request之后才返回数据，而是在有新数据时就主动推送给浏览器。     
+
+也就是说，在Comet的长轮询实现中，浏览器需要不断发送请求，Comet的HTTP流实现中，虽然是服务器周期性的发送数据，浏览器不需要请求，但这两种方式每次发送都还是有很大的HTTP头部文件，WebSocket既可以使浏览器不需要一直请求，也能在有数据时及时发送给浏览器，并且每次发送的数据只有很小的头部。      
+
+Socket.io对WebSocket进行了封装的，既可写在客户端，又可写在服务端的用于实时通信、跨平台的开源框架。它除了支持WebSocket通讯协议外，还支持许多种轮询（Polling）机制以及其它实时通信方式，并封装成了通用的接口，并且在服务端实现了这些实时机制的相应代码。       
+下面有两篇文章，讲述了Websocket和Socket.io：[http://www.cnblogs.com/xiezhengcai/p/3957314.html](http://www.cnblogs.com/xiezhengcai/p/3957314.html)、
+[http://blog.csdn.net/csdnhaoren13/article/details/51034565](http://blog.csdn.net/csdnhaoren13/article/details/51034565)                   
 ![21.5.51.png](http://upload-images.jianshu.io/upload_images/3001083-f1819eaf9cc6f8f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
 **安全性的问题.**     
 ![21.5.52.png](http://upload-images.jianshu.io/upload_images/3001083-c1c3094a930e4b3e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     

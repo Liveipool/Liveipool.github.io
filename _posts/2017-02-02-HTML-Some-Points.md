@@ -24,6 +24,18 @@ description: HTML学习
  - HTML 文档也被称为网页        
  - Web 浏览器的作用是读取 HTML 文档，并以网页的形式显示出它们。浏览器不会显示 HTML 标签，而是使用标签来解释页面的内容。        
 
+### HTML5 浏览器支持     
+所有现代浏览器都支持 HTML5。     
+此外，所有浏览器，不论新旧，都会自动把未识别元素当做行内元素来处理。     
+HTML5 定义了八个新的语义 HTML 元素。所有都是块级元素。     
+您可以把 CSS display 属性设置为 block，以确保老式浏览器中正确的行为：     
+
+```
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+}
+```
+
 ### 替换文本属性（Alt）        
 alt 属性用来为图像定义一串预备的可替换的文本。替换文本属性的值是用户定义的。        
 

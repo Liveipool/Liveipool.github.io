@@ -16,7 +16,6 @@ description: Javascript学习1
 
 **一、关于这门语言的基本介绍及一些历史**  
 Javascript是一门高端的、动态的、弱类型的编程语言，适合面向对象和函数式的编程风格。它是由发展初期的网景(Netscape)公司创建。”Javascirpt”是Oracle公司的注册商标，用来特指网景(现在的Mozilla)对这门语言的实现。  
-网景将这门语言作为标准提交给了ECMA—由于商标的冲突，这门语言的标准版本改了一个丑陋的名字”ECMAScript”。但几乎所有人都将这门语言叫做”Javascript”,我们也只是用”ECMAScript”来指代语言标准。  
 
 **二、Javascript的数据类型的两种分类方法**  
 第一种分法：Javascript的数据类型分为:原始类型(primitive type)和对象类型(object type)。  

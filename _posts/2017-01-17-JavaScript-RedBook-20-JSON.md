@@ -29,7 +29,7 @@ JSON数组采用的就是JavaScript中的数组字面量形式.如:
 		"Marry",
 		"Joey"
 	],
-	year: 2015
+	"year": 2015
 }
 ```
 

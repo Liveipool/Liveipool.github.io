@@ -53,8 +53,11 @@ console.log(window.newValue);  //undefined
   还有两个移动位置的方法，moveTo()和moveBy(),但基本被浏览器禁用了.     
 
 ### 8.1.3 窗口大小      
-跨浏览器确定一个窗口的大小不是一个简单的事.在主流的IE9+、FireFox、Safari、Opera、Chrome有六个属性可以显示浏览器的相关大小信息，可不同的属性在不同浏览器上值也不同，属性有：innerWidth、innerHeight、outerWidth、outerHeight（这四个都是window的属性）、document.documentElement.clientHeight、document.documentElement.clientWidth。     
-另外还有两个方法说可以调整浏览器窗口的大小，resizeTo()resizeBy()很多浏览器都将它们禁用了，我在chrome上试了一下，改动之后只有window.outerWidth和window.outerHeight输出值有变化,浏览器大小并没啥变化.          
+ - 跨浏览器确定一个窗口的大小不是一个简单的事.在主流的IE9+、FireFox、Safari、Opera、Chrome有六个属性可以显示浏览器的相关大小信息，可不同的属性在不同浏览器上值也不同，属性有：innerWidth、innerHeight、outerWidth、outerHeight（这四个都是window的属性）、document.documentElement.clientHeight、document.documentElement.clientWidth。     
+ - 另外还有两个方法说可以调整浏览器窗口的大小，resizeTo()resizeBy()很多浏览器都将它们禁用了。     
+ - innerWidth：浏览器视口（viewport）宽度，如果存在垂直滚动条则包括它。不属于标准。            
+ - outerHeight：  获取整个浏览器窗口的高度，包括侧边栏（如果存在）、窗口镶边和窗口调正边框。只读，没有默认值。不属于标准。          
+ - clientHeight: 返回**元素**内部的高度(单位像素)，包含内边距，但不包括水平滚动条、边框和外边距。clientHeight 可以通过 CSS height + CSS padding - 水平滚动条高度 (如果存在)来计算。暂不属于标准，在CSSDOM的草案中。          
 
 ### 8.1.4 导航和打开窗口       
 使用window.open()方法可以导航到一个特定的URL,也可以打开一个新的浏览器窗口.这个方法可以接收四个参数:1.要加载的URL 2.窗口目标 3.一个特性字符串 4.一个表示新页面是否取代浏览器历史记录中当前加载页面的布尔值.       

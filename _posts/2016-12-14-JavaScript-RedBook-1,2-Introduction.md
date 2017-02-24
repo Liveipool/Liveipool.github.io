@@ -16,6 +16,7 @@ JavaScript诞生于1995年，当时，它的主要目的是处理以前由服务
 ### 1.1 JavaScript简史  
 ![1.1.png](http://upload-images.jianshu.io/upload_images/3001083-d143caa96218073c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)   
 
+概括来说，就是1995年Netscape公司为了给自己的Navigator 2浏览器开发一门脚本语言，创造了JavaScript，它本来是叫LiveScript，但由于想沾上当时火热的Java的光，便改名为JavaScript。Netscape公司在Navigator3中发布了JavaScript1.1。由于当时微软也在IE3中加入了名为JScript的JavaScript实现，大家担心不同的JavaScript实现会使这门语言走向分裂，Netscape公司将JavaScript1.1提交给ECMA，ECMA经过数月完成了ECMA262--定义了一种名为ECMAScript的新脚本语言的标准。至此以后，各浏览器中的JavaScript实现都是基于ECMAScript的。    
 即，**ECMAScript是标准，JavaScript是一种实现**。 
 
 ### 1.2 JavaScript实现  
@@ -28,6 +29,10 @@ JavaScript诞生于1995年，当时，它的主要目的是处理以前由服务
 ![1.24.png](http://upload-images.jianshu.io/upload_images/3001083-810f0f4adba3947a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)      
 
 ![1.25.png](http://upload-images.jianshu.io/upload_images/3001083-ebcbe4a6ea101576.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)      
+ECMAScript 1：1997年06月 首版
+ECMAScript 2：1998年06月 格式修正，以使得其形式与ISO/IEC16262国际标准一致
+ECMAScript 3：1999年12月 强大的正则表达式，更好的文字链处理，新的控制指令，异常处理，错误定义更加明确，数输出的格式化及其它改变
+
 **2015年6月,ES6(也叫ES2015)正式发布了.**  
 
 #### 1.2.2 文档对象模型（Document Object Model， DOM）   

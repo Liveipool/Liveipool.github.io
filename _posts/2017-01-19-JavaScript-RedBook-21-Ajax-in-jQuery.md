@@ -19,8 +19,7 @@ Ajax全称Asynchronous JavaScript and XML,它并不是指一种单一的技术,�
  - 不足:     
  - **浏览器对XMLHttpRequest对象的支持各有差异.**     
  - **破坏浏览器前进,后退按钮的正常运行.**     
- - **对搜索引擎的支持的不足.**     
- - **开发和调试工具的缺乏.**     
+
 
 ## 二. jQuery中的Ajax方法     
  - jQuery对Ajax操作进行了封装.     
