@@ -10,7 +10,7 @@ description: CSS学习
 刚把w3school上css部分的都又看了一遍（CSS3和参考手册还没看），以下为一些琐碎的点：     
 
 #### background-position     
-**background-position可通过关键字（center、left、top、right、bottom）、百分数值、长度值三种方式来进行设置。 **     
+**background-position可通过关键字（center、left、top、right、bottom）、百分数值、长度值三种方式来进行设置。**       
 ![4.11.png](http://upload-images.jianshu.io/upload_images/3001083-0435cab15538c955.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
 
 #### background     
