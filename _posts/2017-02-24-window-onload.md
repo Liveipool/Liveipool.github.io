@@ -1,7 +1,7 @@
 ---
 layout: post
 title: window.onload 函数引发的血案
-date: 2017了他-02-24
+date: 2017-02-24
 categories: blog
 description: JavaScript学习
 ---
