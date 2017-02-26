@@ -2,7 +2,7 @@
 layout: page
 title: "milestone"
 description: "一步一个脚印"
-header-img: "img/backstreet.jpg"
+header-img: "img/ge.png"
 ---
 
 
