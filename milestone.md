@@ -2,7 +2,7 @@
 layout: page
 title: "milestone"
 description: "一步一个脚印"
-header-img: "img/ge.png"
+header-img: "img/backstreet.jpg"
 ---
 
 
@@ -14,7 +14,7 @@ header-img: "img/ge.png"
 [《HWFC项目包理解》：http://liveipool.com/blog/2016/12/18/Understanding-of-HWFC-Project-1/](http://liveipool.com/blog/2016/12/18/Understanding-of-HWFC-Project-1/)
 
 ### 近期学习路线  
-[《近期学习路线》：http://liveipool.com/blog/2016/09/12/studying-plan/](http://liveipool.com/blog/2016/09/12/studying-plan/)  
+[《JavaScript红皮书学习(1,2)--JavaScript简介》：http://liveipool.com/blog/2016/12/14/JavaScript-RedBook-1,2-Introduction](http://liveipool.com/blog/2016/12/14/JavaScript-RedBook-1,2-Introduction/)  
 
 ### 第一篇：  
 [《写在开始》：http://liveipool.com/blog/2016/09/11/the-first-blog/](http://liveipool.com/blog/2016/09/11/the-first-blog/)  
