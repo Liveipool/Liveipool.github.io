@@ -24,7 +24,7 @@ description: 前端学习
 
 ## 球队简介          
 ![introduction.png](http://upload-images.jianshu.io/upload_images/3001083-63e9c976ba13ccba.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)          
-![introduction原型.png](http://upload-images.jianshu.io/upload_images/3001083-690ab67619b84de2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)          
+![introduction原型.png](http://upload-images.jianshu.io/upload_images/3001083-d23c924eb483d51a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)            
 
 ## 成员介绍          
 ![members.png](http://upload-images.jianshu.io/upload_images/3001083-fa5449ecdff9b00b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)          
@@ -32,7 +32,7 @@ description: 前端学习
 
 ## 战绩记录          
 ![records.png](http://upload-images.jianshu.io/upload_images/3001083-76ad083de03980d4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)          
-![records原型.png](http://upload-images.jianshu.io/upload_images/3001083-98dc424834cbd324.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)          
+![records原型.png](http://upload-images.jianshu.io/upload_images/3001083-d0b2bd08c97428f6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
 
 
 ## 图片专区          
