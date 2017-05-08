@@ -74,3 +74,8 @@ function Square(props) {
   );
 }
 ```
+
+晚上回到宿舍又看了看react，看到了阮一峰老师的入门博客，只能说讲得清楚明了，真的看懂能少走很多弯路：    
+[React 入门实例教程](http://www.ruanyifeng.com/blog/2015/03/react.html)     
+[也许，DOM 不是答案](http://www.ruanyifeng.com/blog/2015/02/future-of-dom.html)      
+[React 技术栈系列教程](http://www.ruanyifeng.com/blog/2016/09/react-technology-stack.html)      
