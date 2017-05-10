@@ -60,7 +60,7 @@ props 是不可变的：它们从父级传来并被父级“拥有”。为了�
 **When you want to aggregate data from multiple children or to have two child components communicate with each other, move the state upwards so that it lives in the parent component. The parent can then pass the state back down to the children via props, so that the child components are always in sync with each other and with the parent.**         
 
 #### controlled components         
-子组件使用父组件中prop下来的数据或者绑定了父组件中的函数，则这个子组件被称为受控组件。         
+某个组件绑定了某个事件函数，这个组件就是受控组件。              
 
 #### Functional Components         
 In fact, React supports a simpler syntax called functional components for component types like Square that only consist of a render method.          

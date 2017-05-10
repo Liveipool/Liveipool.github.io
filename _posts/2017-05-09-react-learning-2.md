@@ -44,9 +44,9 @@ State 仅仅是为互动性，也就是随时间变化的数据所预留的。
 
 #### 再看看生命周期           
 组件的生命周期分成三个状态：           
-Mounting：已插入真实 DOM           
-Updating：正在被重新渲染           
-Unmounting：已移出真实 DOM           
+Mounting（挂载）：已插入真实 DOM           
+Updating（更新）：正在被重新渲染           
+Unmounting（卸载）：已移出真实 DOM           
 React 为每个状态都提供了两种处理函数，will 函数在进入状态之前调用，did 函数在进入状态之后调用，三种状态共计五种处理函数。           
 componentWillMount()           
 componentDidMount()           
@@ -55,11 +55,14 @@ componentDidUpdate(object prevProps, object prevState)
 componentWillUnmount()           
 **这五个函数都只能在对应的阶段进行执行，并不能干扰阶段的变化**           
 
+getInitialState(): object 在组件挂载前被调用。有状态组件(Stateful components) 应该实现此函数并返回初始state的数据。    
 
 此外，React 还提供两种特殊状态的处理函数。           
 componentWillReceiveProps(object nextProps)：已加载组件收到新的参数时调用，**可用来进行老数据和新收到的props数据进行一些判断。**           
 shouldComponentUpdate(object nextProps, object nextState)：组件判断是否重新渲染时调用，**常用来优化React代码，它不同于componentWillUpdate，它执行的时间相同，但它可以通过返回值true或者false来决定是否需要重新render，比较有用。**           
 
-#### React事件           
-React中并不完全是熟知的事件委托，而是进行了另外的工作，好好看看这部分：           
-[http://imweb.io/topic/5774e361af96c5e776f1f5cd](http://imweb.io/topic/5774e361af96c5e776f1f5cd)           
+
+##### 已挂载的方法     
+Mounted 复合组件同样支持以下方法:     
+component.forceUpdate() 可以在任何已挂载的组件上调用，在你知道某些深处的组件状态在未使用 this.setState() 就被改变了时。     
+这个没太懂？    
