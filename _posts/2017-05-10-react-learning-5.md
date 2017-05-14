@@ -1,6 +1,6 @@
 ---
 layout: post
-title: React学习（五）-- Diff 算法 
+title: React学习（五）-- Diff 算法
 date: 2017-05-10
 categories: blog
 description: 前端学习
@@ -12,14 +12,14 @@ description: 前端学习
 假设有下面一段代码：          
 
 ```
-var MyComponent = React.createClass({ 
-  render: function() { 
-    if (this.props.first) { 
-      return <div className="first"><span>A Span</span></div>; 
-    } else { 
-      return <div className="second"><p>A Paragraph</p></div>; 
-    } 
-  } 
+var MyComponent = React.createClass({
+  render: function() {
+    if (this.props.first) {
+      return <div className="first"><span>A Span</span></div>;
+    } else {
+      return <div className="second"><p>A Paragraph</p></div>;
+    }
+  }
 });
 ```
 
@@ -35,4 +35,5 @@ Replace node: < span >A Span< /span > by < p >A Paragraph< /p >
 Second to none：          
 Remove node: < div className="second" >< p >A Paragraph< /p >< /div >          
 
-有点难，多看一下下面这篇文章：[React’s diff algorithm](https://calendar.perfplanet.com/2013/diff/)          
+有点难，多看一下下面这两篇文章：[React’s diff algorithm](https://calendar.perfplanet.com/2013/diff/)          
+[http://wiki.jikexueyuan.com/project/react/reconciliation.html](http://wiki.jikexueyuan.com/project/react/reconciliation.html)           
