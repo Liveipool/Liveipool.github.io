@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Archive"
-description: "学在大三"
+description: "Design and programming are human activities, forget that and all is lost."
 header-img: "img/onepiece1.jpg"
 ---
 
