@@ -82,9 +82,32 @@ AngularJS中的服务有两个主要特点：
 在AngularJS 1.5中新加了组件的概念，它的意图是希望从AngularJS 1.x向AngularJS 2.0迁移时能更加平顺，AngularJS团队也提倡使用组件化模式开发Web应用。那么组建是什么呢？其实组件就是指令的一种特性形式，它规避了一些指令中晦涩难理解的东西，比如compile函数，link函数，scope，restrict等，所以组件的目的就是能让我们更为傻瓜式的创建指令，能更好的遵循组件化的开发模式，提高性能以及更容易向AngularJS 2.0迁移。        
 但是，不像Vue中组件的意义很明显，Angular中有directive又有component，它俩区分度不是太高，容易让人混淆，在MA项目中，我们使用的是directives。        
 
-#### 数据双向绑定和脏值检测        
-有点难，看了一遍没看懂，过两天再看一下。        
-[数据双向绑定和脏值检测](http://www.ituring.com.cn/article/39865)        
+#### 术语: 
+ - 模板template：包含了Angular特殊扩展标记的HTML代码
+ - 指令directive：扩展的HTML代码，自定义的标签、属性等等
+ - 模型model：保存在js中，用来和用户交互的数据
+ - 作用域scope：模型数据在HTML页面中产生作用的范围
+ - 表达式expression：AngularJS在HTML页面中可以运算的语法
+ - 编译器compiler：被用来解释HTML代码中的Angular代码
+ - 过滤器filter：对HTML页面中输出的数据进行指定格式展示
+ - 视图view：统称用户看到的HTML视图页面
+ - 数据绑定data binding：JS中特定的数据和HTML页面上的数据的关联关系
+ - 控制器controller：给视图view提供功能支持的东东
+ - 依赖注入dependency injection：Angular自动创建对象并传递对象的一种方式
+ - 注入器 injector：专门用来实现依赖注入（DI）的容器
+ - 模块module：Angular用来对项目进行最高层次封装的东东
+ - 服务service：Angular用来对视图view提供业务功能支持的东东
+ - 组件component：用于对网页的公共部分进行封装重用的Angular代码，通常会包含模板、指令、服务等等
+
+#### 数据双向绑定和脏值检测       
+这篇文章讲得很好：[理解数据绑定过程](http://www.angularjs.cn/A0a6)     
+截一些关键的图防止原文不见了：     
+![image.png](http://upload-images.jianshu.io/upload_images/3001083-c3c701809716c3ed.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
+![image.png](http://upload-images.jianshu.io/upload_images/3001083-b505f1794a28b5f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
+![image.png](http://upload-images.jianshu.io/upload_images/3001083-30f703454bdb5e0b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
+![image.png](http://upload-images.jianshu.io/upload_images/3001083-53850f2db38ab3d2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
+![image.png](http://upload-images.jianshu.io/upload_images/3001083-526b45a01c72eee5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
+![image.png](http://upload-images.jianshu.io/upload_images/3001083-b773fafc79c588be.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)            
 
 ## Angular 2        
 至于Angular 2 的一些新特性，下次脏值检测的时候再一起看吧。        

@@ -110,7 +110,17 @@ Vue的数据是双向绑定的，用户操作之后会改变数据层里的数�
 根据我的理解，实际上不是双向的。让我们再来细细分析一下Vue的双向绑定，比如一个View层的输入框和数据层的数据，它们是通过一个ViewModel间接连接在一起的，更改任意一方都会触发ViewModel里的函数更改另外一方。     
 而View层的React中的数据和Model层的Redux中的store里的数据，实际上并没有直接或间接的联系。store里的数据更改都是通过dispatch action来实现的，意思就是说，在View层有一个输入框，对其进行输入，如果不进行dispatch action，Model层中的store里的数据是不会变化的，因此可以说是导致Model层中数据变化的本质是dispatch的action导致的变化，和View层并没有直接意义上的联系，不对输入框进行输入也是可以通过dispatch action来改变store里的值从而改变输入框的值。     
 而Redux也就是一种单向数据流的思想，所有的数据都在Redux下的store里，store里的数据有变化时再将数据传到View层中的React里进行重新渲染显示出新的数据。     
-因此我觉得，Vue和React的数据流还是有本质上的区别的。     
+因此我觉得，Vue和React的数据流还是有本质上的区别的。 
+
+#### vue和angularjs1和react的比较     
+ - 都是数据驱动的     
+ - AngularJS的api设计较为复杂，学习成本较高，react相对来说也比较高，因为它有一整套技术栈。     
+ - react中全都是组件，主要分为了展示组件和功能组件，但angular有service、directive、component，显得有点点乱，不知用哪个最好，service像功能组件，directive像展示组件。在 Vue 中指令和组件分得更清晰。指令只封装 DOM 操作，而组件代表一个自给自足的独立单元 —— 有自己的视图和数据逻辑。在 AngularJS 中两者有不少相混的地方。     
+ - 在 AngularJS 中，当 watcher 越来越多时会变得越来越慢，因为作用域内的每一次变化，所有 watcher 都要重新计算。并且，如果一些 watcher 触发另一个更新，脏检查循环（digest cycle）可能要运行多次。AngularJS 用户常常要使用深奥的技术，以解决脏检查循环的问题。有时没有简单的办法来优化有大量 watcher 的作用域。Vue 则根本没有这个问题，因为它使用基于依赖追踪的观察系统并且异步队列更新，所有的数据变化都是独立触发，除非它们之间有明确的依赖关系。react类似，并且react检测数据变化的diff算法也很优秀。     
+ - angularjs1有个较为重要的概念是依赖注入，依赖注入式实现控制反转的一种软件设计模式，即将被依赖的对象传递给依赖者，而不需要依赖者自己去创建和查找所需对象。而vue和react不是这样。可能这就是为什么感觉vue和react的模块化做得更好的原因。     
+ - react和vue都是有虚拟DOM的概念的，angularjs不是。     
+ - react和vue都是一个库,它们将注意力集中保持在核心库，它们不是像angularjs一样的一个完整的框架，若还需要复杂的如路由或状态管理等功能时还需要redux和vuex等其他库。     
+ - react有利于seo。         
 
 #### 参考文献     
 [Vue.js——60分钟快速入门](http://www.cnblogs.com/keepfool/p/5619070.html)     
