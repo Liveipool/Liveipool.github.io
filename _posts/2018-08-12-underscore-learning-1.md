@@ -45,7 +45,7 @@ _.template('<p><%= text %></p>', {text: 'Hello WeBank!'});
   // ...
 })()
 ```
-所以，当我们写自己的库的时候，也可以考虑在最外层包裹上一个立即执行函数。既不受外部影响，也不给外部舔麻烦。   
+所以，当我们写自己的库的时候，也可以考虑在最外层包裹上一个立即执行函数。既不受外部影响，也不给外部添麻烦。   
 
 #### _ 对象
 underscore 有下划线的意思，所以 underscore 通过一个下划线变量 _ 来标识自身。        
@@ -64,10 +64,10 @@ var _ = function (obj) {
 ```
 
 #### 保留用户的 _
-默认情况下，underscore 对象 _ 会覆盖全局对象上同名的 _ 属性。但是，underscore 会保存之前已经存在的 _ 属性：   
+默认情况下，underscore 对象 _ 会覆盖全局对象上同名的 _ 属性。但是，underscore 会保留之前已经存在的 _ 属性：   
 
 ``` javascript
-// 保存之前已经存在的 _ 属性
+// 保留之前已经存在的 _ 属性
 var previousUnderscore = root._;
 ```
 
@@ -143,18 +143,16 @@ _.each(letters, function(letter, index, letters) {
 
 ```  javascript
 var obj = {
-  name: 'wxj',
-  age: 13,
-  sex: 'male'
+  name: 'liveipool',
+  age: 22,
 };
 
 _.each(obj, function(value, key, obj){
-  console.log('['+key+'] is:', value);
+  console.log(key, ' is: ', value);
 });
 
-// name's value is: wxj
-// ...
-// ...
+// name is liveipool
+// age is ...
 ```
 
 _.each实现的源码：   
@@ -242,8 +240,8 @@ array.includes(element)
 
 确实，我的观点和作者一样，在现在，使用标准的ES的语法已经能实现很多我们以前只能通过hack或第三方库才能实现的功能，Underscore.js和Lodash这种库可能后面用到的地方越来越少。   
 但是，这并不表示他们不值得学习了，历史的车轮总是滚滚向前，就像我们现在去看2007年的iPhone一样，和现在的iPhoneX比起来，功能和样子都那么Old school，但一定是在老iPhone的积累和沉淀下才慢慢发展到了现在。    
-不可否认的是，现在ECMAScript标准中的很多方法等都是受到了Underscore.js的启发，所以阅读Underscore.js的源码可以了解到最初的这些优秀方法是怎么样的，又如何发展到了现在，现在的标准方法和以前的比又有什么样的优化呢，如果真的懂了这些，也算是很有收获了。   
-所以，就算是只有1500-2000行源码的Underscore.js，也不是一两天就能快速读完的，后面有时间再继续深入学习，下一篇文章见！   
+不可否认的是，现在ECMAScript标准中的很多方法等都是受到了Underscore.js的启发，所以阅读Underscore.js的源码可以了解到最初的这些优秀方法是怎么样的，又如何发展到了现在，现在的标准方法和以前的比又有什么样的优化呢，如果真的懂了这些，也算是很有收获了。    
+所以，就算是只有1500-2000行源码的Underscore.js，也不是一两天就能快速读完的，后面有时间再继续深入学习，下一篇文章见！    
 
 #### 学习资料
 - [英文文档](https://underscorejs.org/)
