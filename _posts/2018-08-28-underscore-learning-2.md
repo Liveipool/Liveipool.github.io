@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Underscore.js源码学习（一）
-date: 2018-08-12
+title:  Underscore.js源码学习（二）
+date: 2018-08-28
 categories: blog
 description: 前端学习
 ---

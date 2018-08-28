@@ -18,13 +18,8 @@ description: 前端学习
 它是很好的函数式编程（Functional Programming）的体现。看完它后，紧接着看《javascript函数式编程》这本书。
 
 相关链接：
-- [Underscore.js 源码解读 & 系列文章](https://github.com/hanzichi/underscore-analysis)
-- [underscore源码分析](https://legacy.gitbook.com/book/yoyoyohamapi/undersercore-analysis/details)
-- [underscore\[注解版\]](https://underscorejs.org/docs/underscore.html)
-- [【 js 基础 】 深浅拷贝](https://zhuanlan.zhihu.com/p/26282765)
-- [【 js 性能优化】underscore throttle 与 debounce 节流](https://zhuanlan.zhihu.com/p/26054718)
-- [You Might Not Need Underscore](https://www.reindex.io/blog/you-might-not-need-underscore/)
-- [You-Dont-Need-Lodash-Underscore](https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore)
+ - **2018年8月11日补充，自己的源码阅读总结：[Underscore.js源码学习（一）](http://liveipool.com/blog/2018/08/12/underscore-learning-1/)，上面写了自己读源码的一些总结以及整理的一些优质参考资料。**    
+ - **2018年8月28日补充，自己的源码阅读总计：[Underscore.js源码学习（二）](http://liveipool.com/blog/2018/08/28/underscore-learning-2/)**   
 
 #### [Backbone.js](https://github.com/jashkenas/backbone)
 两千多行的MVC框架。它里面大量设计模式的灵活运用，以及令人赞叹的处理技巧，还是非常值得学习。
