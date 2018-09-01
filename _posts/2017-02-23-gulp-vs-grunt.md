@@ -20,3 +20,5 @@ description: JavaScript学习
  - 而gulp正是通过流和代码优于配置的策略来尽量简化任务编写的工作。这看起来有点“像jQuery”的方法，把动作串起来创建构建任务。流在Node.js生态系统中也扮演了重要的角色，Node将几乎所有IO操作都抽象成了stream的操作。          
  - 当使用流时，gulp**去除了中间文件**，通过管道将多个任务和操作连接起来，只将最后的输出写入磁盘，因此**只有一次I/O过程**，整个过程因此变得更快。          
  - 而使用Grunt的I/O过程中会**产生**一些中间态的**临时文件**，一些任务生成临时文件，其它任务可能会基于临时文件再做处理并生成最终的构建后文件。          
+
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     

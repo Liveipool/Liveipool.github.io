@@ -103,3 +103,5 @@ Expires存储的是一个用来控制缓存失效的日期。当浏览器看到�
 当页面发生了重定向，就会延迟整个HTML文档的传输。在HTML文档到达之前，页面中不会呈现任何东西，也没有任何组件会被下载。        
 
 来看一个实际例子：对于ASP.NET webform开发来说，对于新手很容易犯一个错误，就是把页面的连接写成服务器控件后台代码里，例如用一个Button控件，在它的后台click事件中写上：Response.Redirect("")；然而这个Button的作用只是转移URL，这是非常低效的做法，因为点击Button后，先发送一个Post请求给服务器，服务器处理Response.Redirect("")后就发送一个302响应给浏览器，浏览器再根据响应的URL发送GET请求。正确的做法应该是在html页面直接使用a标签做链接，这样就避免了多余的post和重定向。        
+
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     

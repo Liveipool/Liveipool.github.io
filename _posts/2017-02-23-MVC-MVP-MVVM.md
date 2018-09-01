@@ -89,3 +89,5 @@ MVVM和MVP比较像，但还是有些区别。
 
 ## MVC ， MVP 和 MVVM的区别
 阮一峰老师总结得清晰明了：[MVC，MVP 和 MVVM 的图示](http://www.ruanyifeng.com/blog/2015/02/mvcmvp_mvvm.html)        
+
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     

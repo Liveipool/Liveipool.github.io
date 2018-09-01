@@ -222,3 +222,5 @@ PS. 除版本1.0外，后面的皆为一些预想，其中的功能也可以提�
 
 
 
+
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     

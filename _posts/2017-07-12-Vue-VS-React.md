@@ -124,3 +124,5 @@ Vue的数据是双向绑定的，用户操作之后会改变数据层里的数�
 
 #### 参考文献     
 [Vue.js——60分钟快速入门](http://www.cnblogs.com/keepfool/p/5619070.html)     
+
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     

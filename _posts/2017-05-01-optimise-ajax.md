@@ -183,3 +183,5 @@ $.get(global_api.movie_info + movieId, function(data, textStatus) {
 ```
 这样写清晰明了，结构好，代码可复用性高，当代码更复杂时，可以摆脱回调地狱。        
 不用不知道，一用起来真是感觉好爽，去优化其他的代码了。。。        
+
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     

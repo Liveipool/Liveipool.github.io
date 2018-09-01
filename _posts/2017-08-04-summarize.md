@@ -91,3 +91,5 @@ description: 前端学习
 某些按钮图标，本身较小，可以设置更大的交互区域，来提升用户体验。     
 
 #### 若还有漏掉的忘记记录的内容，想到后继续补充...     
+
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     

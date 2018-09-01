@@ -52,3 +52,5 @@ description: 前端学习
 
 #### 保持reducer的case里的纯净     
 reducer中的action case中，尽量保持纯净，不要有计算，就set state就好了。     
+
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     

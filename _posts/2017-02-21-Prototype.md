@@ -224,3 +224,6 @@ Object.defineProperty(Foo.prototype, "constructor", {
  - 处于各种原因，以“继承”结尾的术语（包括“原型继承”）和其他面向对象的术语都无法帮助你理解JavaScript的真实机制。         
  - 相比之下，**“委托”**是一个更合适的术语，因为对象之间的关系**不是复制而是委托。**         
  - 关于“委托”的更详细的了解等到仔细看完《你不知道的JS》第五章再来详细总结。         
+
+ ![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
+ 

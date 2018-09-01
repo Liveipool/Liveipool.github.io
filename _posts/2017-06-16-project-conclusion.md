@@ -85,3 +85,5 @@ headBarInfo().then(() => {});
 
 ### 函数的提取          
 注意放到同一层级下的函数的功能和从属要类似，避免出现拆分得太细的情况。比如有一个a函数和一个b函数是同级的，而a函数里有一部分内容也可以拆成一个c函数，但要是把a、b、c三个函数都写到同一级下又感觉不太妥当，所以还是要注意拆分函数时的必要性。          
+
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     

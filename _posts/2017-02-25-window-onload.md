@@ -150,3 +150,5 @@ let a = "lala";
 foo();  // Uncaught TypeError: Cannot read property 'a' of undefined
 ```
 在严格模式下，this禁止指向window，因此在调用foo时，this为undefined，所以会报错：Uncaught TypeError: Cannot read property 'a' of undefined。           
+
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     

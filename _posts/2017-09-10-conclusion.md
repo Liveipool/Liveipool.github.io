@@ -56,3 +56,5 @@ xss主要是注入攻击，用户过度信任网站，放任来自此网站的�
 
 #### 面试题总结网站
 [前端开发面试题](https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions/Questions-and-Answers)
+
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     

@@ -73,3 +73,6 @@ description: 前端学习
  - 503 Service Unavailable	请求未完成。服务器临时过载或当机。         
  - 504 Gateway Timeout	网关超时。         
  - 505 HTTP Version Not Supported	服务器不支持请求中指明的HTTP协议版本。         
+
+ ![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
+ 

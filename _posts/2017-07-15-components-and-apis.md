@@ -114,3 +114,4 @@ set.........
 
 #### 在api文档中提供一些默认的或参考的具体代码     
 只是一些参数名或方法名的话，使用组件的人会有一定的学习成本，而给出一些默认的或参考的代码（参考逻辑、样式）等，会降低这个成本。          
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     

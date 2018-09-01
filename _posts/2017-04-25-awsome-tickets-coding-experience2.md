@@ -101,3 +101,5 @@ Array.from是ES6中对数组的扩展，但IE现在任何版本都不支持。
 
 #### spinner           
 现在的话，由于页面上的很多数据都是动态加载的，所以如果网络不好可能交互就会很差，准备在可能会等待数据的地方加一些spinner进行提示，这个和后面改进代码的时候一起做吧。           
+
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     

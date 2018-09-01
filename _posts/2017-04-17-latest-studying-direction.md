@@ -62,3 +62,5 @@ flag在这里先立下了，秋招时一定要做一只offer收割鸡。
 
 #### 作文+刷题          
 六月份的考试前几天集中攻一下。          
+
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     

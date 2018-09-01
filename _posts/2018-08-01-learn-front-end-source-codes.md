@@ -185,3 +185,5 @@ Normalize-zh.css 是根据对 Normalize.css 的源码分析后，经过学习与
 - [研究学习javascript框架或jquery插件的正确姿势是什么？](https://www.zhihu.com/question/38621456/answer/77255054)
 - [哪些 JavaScript 框架（库）的源代码最值得阅读和学习？](https://www.zhihu.com/question/19793863)
 - [6 款 Javascript 的图像处理库](https://juejin.im/post/58c0edac0ce4630054592a78)
+
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     

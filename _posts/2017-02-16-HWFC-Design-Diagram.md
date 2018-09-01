@@ -52,3 +52,5 @@ description: 前端学习
 ![essays.png](http://upload-images.jianshu.io/upload_images/3001083-6173f07133d5f3f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)          
 ![essays原型.png](http://upload-images.jianshu.io/upload_images/3001083-f34f374856148dc2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)          
           
+
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
