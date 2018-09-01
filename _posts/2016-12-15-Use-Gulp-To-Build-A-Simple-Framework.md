@@ -250,5 +250,5 @@ gulp.task('default', ['webserver', 'clean', 'sass', 'css', 'js', 'static', 'inje
 可以看出，这里好多命令执行了几遍，可能是因为我在里面的一些依赖关系没有理清或者多个文件就会有多次inject等的情况，不过这个就需要看更多和gulp相关的文档、文章了，这里只是搭建了一个简单的框架，要想给一个大项目搭建框架，还需要学习得更加深入才行。            
 总算是写完了这篇blog，内容不多，就一篇小小的总结，但也是踩过的坑了，以后再遇到相同的问题时，希望能够感觉更加得心应手吧，已是25：05分了，睡觉了～        
 
-
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
 

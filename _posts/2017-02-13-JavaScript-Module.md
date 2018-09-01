@@ -111,3 +111,5 @@ var $ = require('jquery'); 和 import $ from 'jquery' 是完全不同的两种�
 
 
 > 确实，各种模块和书写规范层出不穷，希望ES6能尽快终止这场混战。          
+
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     

@@ -47,3 +47,6 @@ Google Chrome（版本28以前）也使用Webkit作为内核(在脚本理解方�
  - Firefox： -moz-      
  - IE：-ms-      
  - Opera（早期）：-o-      
+
+ ![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
+ 

@@ -114,3 +114,5 @@ NS类型已经由腾讯云解析自动生成好了，这里也不需要设置别
 再过一个小时，英超比赛就要开打了，利物浦对阵热刺，在利物浦七轮不胜的同时，让我大声说一句：“The champions！Tottenham Hotspur!!!， **热刺是冠军！！！**”       
 
 （补充说明，由于链接域名需要几十个工作日的网上备案，因此这次简历就没法使用域名了，直接通过ip地址查看：[123.207.29.33](http://123.207.29.33:3000/)）        
+
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     

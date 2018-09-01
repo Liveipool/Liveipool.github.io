@@ -213,3 +213,6 @@ Web Worker 和 DOM
  - Server-Sent 事件指的是网页自动从服务器获得更新。        
  - 以前也可能做到这一点，前提是网页不得不询问是否有可用的更新。通过 Server-Sent 事件，更新能够自动到达。        
  - 例如：Facebook/Twitter 更新、股价更新、新的博文、赛事结果，等等。        
+
+ ![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
+ 

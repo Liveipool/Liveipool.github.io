@@ -53,3 +53,4 @@ Web开发界经常被提及的三个词：可用性（usability）、可访问�
 
 > 我对三者的区别在于三个时期中网络的角色——web1.0网络是信息提供者，**单向性的提供和单一性理解**；**web2.0网络是平台**，用户提供信息，通过网络，其他用户获取信息；**web3.0网络成为用户需求理解者和提供者**，网络对用户了如指掌，知道用户有什么、要什么以及行为习惯，进行资源筛选、智能匹配，直接给用户答案。          
 
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
