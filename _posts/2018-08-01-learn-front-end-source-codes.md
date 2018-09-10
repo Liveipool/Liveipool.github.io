@@ -19,7 +19,9 @@ description: 前端学习
 
 相关链接：
  - **2018年8月11日补充，自己的源码阅读总结：[Underscore.js源码学习（一）](http://liveipool.com/blog/2018/08/12/underscore-learning-1/)，上面写了自己读源码的一些总结以及整理的一些优质参考资料。**    
- - **2018年8月28日补充，自己的源码阅读总计：[Underscore.js源码学习（二）](http://liveipool.com/blog/2018/08/28/underscore-learning-2/)**   
+ - **2018年8月28日补充，自己的源码阅读总结：[Underscore.js源码学习（二）](http://liveipool.com/blog/2018/08/28/underscore-learning-2/)**   
+ - **2018年9月2日补充：[对 JavaScript 函数式编程的一些想法](http://liveipool.com/blog/2018/09/02/thoughts-about-functional-programming/)**    
+ - **2018年9月10日补充，自己的源码阅读总结：[Underscore.js源码学习（三）-- 学以致用](http://liveipool.com/blog/2018/08/28/underscore-learning-3/)**   
 
 #### [Backbone.js](https://github.com/jashkenas/backbone)
 两千多行的MVC框架。它里面大量设计模式的灵活运用，以及令人赞叹的处理技巧，还是非常值得学习。
