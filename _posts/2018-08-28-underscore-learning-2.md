@@ -306,4 +306,6 @@ _.zip = function() {
 - [1.8.3版本的有一些中文注释的源码](https://github.com/hanzichi/underscore-analysis/blob/master/underscore-1.8.3.js/underscore-1.8.3-analysis.js)
 
 #### 参考文章
-[Array.prototype.slice.call()方法详解](https://blog.csdn.net/i10630226/article/details/49702375)
+[Array.prototype.slice.call()方法详解](https://blog.csdn.net/i10630226/article/details/49702375)   
+
+![赞赏码.jpeg](https://upload-images.jianshu.io/upload_images/3001083-f65814d1f594b39c.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)     
